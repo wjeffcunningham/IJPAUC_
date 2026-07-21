@@ -1,0 +1,18 @@
+/* Hairline fix.
+   Inline links fragment across line breaks; sliced borders = hairlines. */
+a.track-link {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone; /* each wrapped line gets a complete pill, no open edges */
+}
+/* In prose contexts, drop the pill entirely for an underline */
+p a.track-link,
+figcaption a.track-link,
+marginalia a.track-link,
+li p a.track-link {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}

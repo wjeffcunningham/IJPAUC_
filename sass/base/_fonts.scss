@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: "EB Garamond fallback";
+  src: local("Times New Roman");
+  size-adjust: 94.7692%;
+  ascent-override: 106.2581%;
+  descent-override: 31.4448%;
+  line-gap-override: 0%;
+}

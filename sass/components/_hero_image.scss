@@ -1,0 +1,47 @@
+#hero-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.hero-media {
+  width: 768px;
+  height: auto;
+  aspect-ratio: 640 / 480;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: top;
+  background: #0a0a0a url('./full/gifs/landingdemo-poster.jpg') top center / cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  .hero-media {
+    width: 100%;
+  }
+}
+
+.hero-image-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f00;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: normal;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-image-text {
+    font-size: 10cqw;
+  }
+}
+
+.hero-media::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}

@@ -1223,9 +1223,8 @@ body.dark-mode .datebook-note::before {
 }
 
 .image-grid.no-bg-grid figure:first-child {
-  background-color: #000;
+  background-color: transparent;
   box-shadow: none;
-  min-height: 120px;
 }
 .image-grid.no-bg-grid figure:first-child img,
 .image-grid.no-bg-grid figure:first-child a {

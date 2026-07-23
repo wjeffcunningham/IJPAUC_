@@ -141,7 +141,7 @@ Index</a></div>
   </div> <!-- End of .menu-header -->
   <!-- ✅ HERO -->
 <div id="hero-image-container">
-<img id="hero-media" class="hero-media lazy-gif" width="640" height="480" src="./full/gifs/landingdemo-poster.jpg" data-gif-src="./full/gifs/landingdemo.gif" alt="">
+<img id="hero-media" class="hero-media eager-gif" width="640" height="480" src="./full/gifs/landingdemo-poster.jpg" data-gif-src="./full/gifs/landingdemo.gif" fetchpriority="high" alt="">
   <div class="hero-image-text">
     IS JURASSIC PARK<br>(1993)<br>AN UNCONSCIOUS CONFESSION?
   </div>
@@ -880,11 +880,21 @@ document.addEventListener('DOMContentLoaded', () => {
   if (musicButton) {
     musicButton.addEventListener('click', cycleMusic);
   }
-  // === 8. LAZY GIF SWAP ===
-  // Each .lazy-gif starts out showing a small static poster image (fast, no
-  // autoplay policy involved). Once the real animated GIF has fully downloaded
-  // in the background, swap it in -- and for anything below the fold, don't
-  // even start that download until the image is about to scroll into view.
+  // === 8. GIF SWAP-IN ===
+  // Hero: always visible immediately on load, so point it at the real GIF
+  // right away (fetchpriority="high" in the HTML keeps it from losing the
+  // bandwidth race) and let the browser paint it progressively, frame by
+  // frame, as bytes arrive -- same as any GIF has always worked. Waiting for
+  // a full preload here was adding the multi-second delay before it looked
+  // alive.
+  document.querySelectorAll('img.eager-gif').forEach(img => {
+    const gifSrc = img.dataset.gifSrc;
+    if (gifSrc) img.src = gifSrc;
+  });
+
+  // Below-the-fold GIFs: don't start downloading until they're about to
+  // scroll into view, and preload fully in the background before swapping,
+  // so nothing partial flashes while the visitor is scrolling toward them.
   const lazyGifs = document.querySelectorAll('img.lazy-gif');
   function swapInGif(img) {
     const gifSrc = img.dataset.gifSrc;

@@ -7,18 +7,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="./js/menu.js"></script>
-  <script type="text/javascript" src="./js/tracklinks.js"></script>
-  <script type="text/javascript" src="./js/darkmode.js"></script>
+  <script type="text/javascript" src="./js/menu.js" defer></script>
+  <script type="text/javascript" src="./js/tracklinks.js" defer></script>
+  <script type="text/javascript" src="./js/darkmode.js" defer></script>
   <meta charset="utf-8">
   <meta name="description" content="Is Jurassic Park (1993) an Unconscious Confession?">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="preload" href="full/gifs/landingdemo.mp4" as="video" type="video/mp4">
  <link rel="preload" href="./full/gifs/landingdemo-poster.jpg" as="image" fetchpriority="high">
-
 </head>
 <body>
-
 <input type="checkbox" id="info-modal-toggle" hidden>
 <div class="modal" id="info-modal">
   <label class="modal-overlay" for="info-modal-toggle"></label>
@@ -29,38 +26,31 @@
     <p>Use the tools in the menu to toggle citations, characters, and parentheticals.</p>
   </div>
 </div>
-
 <input type="checkbox" id="abstract-toggle" hidden>
 <div class="modal" id="abstract-modal">
   <label class="modal-overlay" for="abstract-toggle"></label>
-
 <div class="modal-box">
   <label for="abstract-toggle" class="modal-close">x</label>
-
   <div class="abstract-carousel">
     <input type="radio" name="abstract-step" id="abstract1" checked hidden>
     <input type="radio" name="abstract-step" id="abstract2" hidden>
     <input type="radio" name="abstract-step" id="abstract3" hidden>
     <input type="radio" name="abstract-step" id="abstract4" hidden>
-
     <div class="abstract-slide slide1">
       <label for="abstract2">
         <p><strong>IJPAUC?</strong> is a hybrid research artifact on the edge of classification—book, media essay, pamphlet, game. It invites speculative historiography, mediated memory, and AI-assisted forensics, launched under the #VVIP25 Vancouver Music and Videography Project.</p>
       </label>
     </div>
-
     <div class="abstract-slide slide2">
       <label for="abstract3">
-        <p>It avoids algorithmic closure in favor of a “kruft” method—paying attention to marginalia, redundancies, and discarded leads. This textured mess resists clean narrative synthesis and courts interpretive ambiguity.</p>
+        <p>It avoids algorithmic closure in favor of a "kruft" method—paying attention to marginalia, redundancies, and discarded leads. This textured mess resists clean narrative synthesis and courts interpretive ambiguity.</p>
       </label>
     </div>
-
     <div class="abstract-slide slide3">
       <label for="abstract4">
         <p>Like dusting crumbs from a shattered vase to study a missing glyph, IJPAUC? foregrounds affective and evidentiary fragments. It offers luminol where there is no spotlight: a sense of what was once present, now scrubbed out.</p>
       </label>
     </div>
-
     <div class="abstract-slide slide4">
       <label for="abstract1">
         <p>Beyond its specific case, the form itself is the argument: a para-forensic, media-native pamphlet probing cultural memory. It models a posture of slow epistemology—neither outrage nor apathy, but unresolved, open inquiry.</p>
@@ -68,24 +58,18 @@
     </div>
   </div>
 </div>
-
 </div>
 </div>
-
   <div class="menu-header" id="menu-header">
     <input class="menu-btn" type="checkbox" id="menu-btn" autocomplete="off">
     <label class="menu-icon" for="menu-btn">&#x2261;</label>
-
     <!-- Place this near the top of your menu HTML, before .menu-grid -->
 <input type="checkbox" id="notes-toggle" hidden>
-
     <!-- The collapsible menu, now using grid -->
     <div class="menu-grid">
-
       <!-- Hidden checkboxes for toggling -->
       <input type="checkbox" id="info-toggle" hidden>
       <input type="checkbox" id="tools-toggle" hidden>
-
 <!-- Row 1: main icons -->
 <div class="widgets-row">
   <div class="widgets" id="base-widgets">
@@ -94,7 +78,6 @@
     <label for="tools-toggle" title="Text Tools">⚙️</label>
     <label for="menu-btn" title="Menu">&#x2630;</label>
   </div>
-
   <!-- Row 2: utility icons -->
   <div class="widgets" id="tools-widgets">
     <label for="toggle-ch" title="Toggle Characters">🎭</label>
@@ -107,21 +90,17 @@
     <marginalia data-type="x">v1.1</marginalia>
   </div>
 </div>
-
       <div class="grid-cell menu-abstract">
         <label for="abstract-toggle" class="abstract-open">Abstract</label>
       </div>
-
       <!-- 3. Index -->
       <div class="grid-cell menu-index"><a href="index.html" class="track-link" data-id="page1">
 Index</a></div>
-
       <!-- 4–5. Dossier toggle with links -->
       <details class="grid-cell dossier-dropdown">
         <summary>Dossier</summary>
         <ol class="menu-links">
           <li></li><li></li><li></li><li></li> <!-- padding -->
-
           <li><a href="pages/dossier.html#section-01" class="track-link">
 1</a></li>
           <li><a href="pages/dossier.html#section-02" class="track-link">
@@ -160,30 +139,24 @@ Index</a></div>
       </details>
     </div> <!-- End of .menu-grid -->
   </div> <!-- End of .menu-header -->
-
   <!-- ✅ HERO -->
 <div id="hero-image-container">
 <video autoplay muted playsinline loop id="hero-media" class="hero-media" width="640" height="480">
   <source src="./full/gifs/landingdemo.mp4" type="video/mp4">
 </video>
-
   <div class="hero-image-text">
     IS JURASSIC PARK<br>(1993)<br>AN UNCONSCIOUS CONFESSION?
   </div>
 </div>
-
 <input type="checkbox" id="toggle-pa" hidden>
 <input type="checkbox" id="toggle-ci" hidden>
 <input type="checkbox" id="toggle-ch" hidden>
 <input type="checkbox" id="toggle-x" hidden>
   <main>
-
     <div class="title-header">
     </div>
-
     <div>
-      <p><i>In 1982, two illegally-hired child “extras” were killed in a stunt accident directed by John Landis on the set of Twilight Zone: The Movie, a Steven Spielberg production. Spielberg’s association is typically remembered as no association at all. But to those who have studied the case closely, the question remains obscure.</i></p>
-
+      <p><i>In 1982, two illegally-hired child "extras" were killed in a stunt accident directed by John Landis on the set of Twilight Zone: The Movie, a Steven Spielberg production. Spielberg's association is typically remembered as no association at all. But to those who have studied the case closely, the question remains obscure.</i></p>
 <div class="meta-line">
   <a href="https://github.com/wjeffcunningham" class="track-link">WJC</a>
 July 1st, 2025 <!--Ed. July 16th, 2026-->
@@ -195,66 +168,53 @@ July 1st, 2025 <!--Ed. July 16th, 2026-->
 </div>
 <div class="image-grid">
     <figure>
-        <img src="./full/gifs/01-ezgif.com-optimize.gif"> 
-       <figcaption>Jurassic Park (1993). Main-Road T-Rex Attack. The final draft describes the T-Rex as being “twenty five feet high.”</figcaption>
+        <video autoplay muted loop playsinline preload="metadata" poster="./full/gifs/01-poster.jpg">
+          <source src="./full/gifs/01.mp4" type="video/mp4">
+        </video>
+       <figcaption>Jurassic Park (1993). Main-Road T-Rex Attack. The final draft describes the T-Rex as being "twenty five feet high."</figcaption>
     </figure>
-
       <figure>
-        <img src="./full/gifs/02-ezgif.com-optimize.gif">      
-        <figcaption>Twilight Zone: The Movie, scene 32, July 23rd, 1982. According to the NTSB, the helicopter “hovered about 25 feet above the village.”</figcaption>
+        <video autoplay muted loop playsinline preload="metadata" poster="./full/gifs/02-poster.jpg">
+          <source src="./full/gifs/02.mp4" type="video/mp4">
+        </video>
+        <figcaption>Twilight Zone: The Movie, scene 32, July 23rd, 1982. According to the NTSB, the helicopter "hovered about 25 feet above the village."</figcaption>
     </figure>
 </div>
-
 <marginalia data-type="x"><div id="score" class="score-display"></div></marginalia>
-
-<p>In 1982, veteran Hollywood actor Vic Morrow (age 53) and two <a href="pages/dossier.html#section-01" class="track-link" data-id="page2">illegally-hired</a> child “extras,” Myca Dinh Le (age 7) and Renee Shin-Yi Chen (age 6) were <a href="https://en.wikipedia.org/wiki/Twilight_Zone_accident#" class="track-link" data-id="page3">killed during the filming of a Vietnam war rescue scene, involving at least fourteen gasoline-powered pyrotechnic charges, on the set of Warner Bros.’ <em>Twilight Zone: The Movie</em> (1983), when a Bell UH-1 “Huey” helicopter crashed on them</a>. As well, ample evidence suggested that the set had been operating in a state of <a href="pages/dossier.html#section-02" class="track-link" data-id="page4">extreme negligence</a>.</p>
-
-
+<p>In 1982, veteran Hollywood actor Vic Morrow (age 53) and two <a href="pages/dossier.html#section-01" class="track-link" data-id="page2">illegally-hired</a> child "extras," Myca Dinh Le (age 7) and Renee Shin-Yi Chen (age 6) were <a href="https://en.wikipedia.org/wiki/Twilight_Zone_accident#" class="track-link" data-id="page3">killed during the filming of a Vietnam war rescue scene, involving at least fourteen gasoline-powered pyrotechnic charges, on the set of Warner Bros.' <em>Twilight Zone: The Movie</em> (1983), when a Bell UH-1 "Huey" helicopter crashed on them</a>. As well, ample evidence suggested that the set had been operating in a state of <a href="pages/dossier.html#section-02" class="track-link" data-id="page4">extreme negligence</a>.</p>
 <div class="image-grid">
   <figure>
-<img src="./full/pics/01.jpg">
+<img src="./full/pics/01.jpg" loading="lazy">
 <figcaption>Last known still photo of Myca and Renee, July 22nd, 1982.</figcaption></figure>
 </div>
-
 <p></p>
-
-<p>In the days after the accident, the Chen family filed a $200-million civil suit against the filmmakers, whom they alleged had badly misled them about the dangers inherent to their participation. The suit named <a href="pages/dossier.html#section-03" class="track-link" data-id="page5">five corporations and nine individuals</a> involved in the film’s production, reflecting early uncertainty about who was responsible.</p>
-
-<p>Because the accident was simultaneously an aircraft crash, a labour code violation, and a possibly criminal matter, jurisdiction was split among the NTSB, Cal/OSHA, and the L.A. Sheriff’s Department. With no single agency clearly in charge, influential witnesses—particularly production and studio executives—had greater latitude to maneuver, delay cooperation, and exploit jurisdictional gaps, significantly limiting the police and prosecutors’ leverage in the critical early stages. By the time the NTSB and Cal/OSHA completed their investigations at the end of 1982, only a single detective and a single state prosecutor <marginalia data-type="ch">(Gary Kesselman)</marginalia> were left to build the case, against an array of lawyers largely bankrolled by studios and insurance companies highly motivated to avoid a windfall judgement in the pending civil trial. Despite strong evidence of wrongdoing, the case nearly collapsed at one point due to a lack of witness testimony. Many of those who did ultimately testify spoke to the <a href="pages/dossier.html#section-04" class="track-link" data-id="page6">serious threats of blacklisting</a> they’d faced for their cooperation. It was only in 1983, by the state’s discovery of two key witnesses—the Production Coordinator <marginalia data-type="ch">(Donna Schuman)</marginalia> and the 2nd AD <marginalia data-type="ch">(Andy House)</marginalia>—that they were able to substantiate the case and navigate it through <a href="pages/dossier.html#section-05" class="track-link" data-id="page7">a grand jury hearing (June 1983), a preliminary hearing (February 1984), and an appeal gone awry (November 1984)</a>.</p>
-
+<p>In the days after the accident, the Chen family filed a $200-million civil suit against the filmmakers, whom they alleged had badly misled them about the dangers inherent to their participation. The suit named <a href="pages/dossier.html#section-03" class="track-link" data-id="page5">five corporations and nine individuals</a> involved in the film's production, reflecting early uncertainty about who was responsible.</p>
+<p>Because the accident was simultaneously an aircraft crash, a labour code violation, and a possibly criminal matter, jurisdiction was split among the NTSB, Cal/OSHA, and the L.A. Sheriff's Department. With no single agency clearly in charge, influential witnesses—particularly production and studio executives—had greater latitude to maneuver, delay cooperation, and exploit jurisdictional gaps, significantly limiting the police and prosecutors' leverage in the critical early stages. By the time the NTSB and Cal/OSHA completed their investigations at the end of 1982, only a single detective and a single state prosecutor <marginalia data-type="ch">(Gary Kesselman)</marginalia> were left to build the case, against an array of lawyers largely bankrolled by studios and insurance companies highly motivated to avoid a windfall judgement in the pending civil trial. Despite strong evidence of wrongdoing, the case nearly collapsed at one point due to a lack of witness testimony. Many of those who did ultimately testify spoke to the <a href="pages/dossier.html#section-04" class="track-link" data-id="page6">serious threats of blacklisting</a> they'd faced for their cooperation. It was only in 1983, by the state's discovery of two key witnesses—the Production Coordinator <marginalia data-type="ch">(Donna Schuman)</marginalia> and the 2nd AD <marginalia data-type="ch">(Andy House)</marginalia>—that they were able to substantiate the case and navigate it through <a href="pages/dossier.html#section-05" class="track-link" data-id="page7">a grand jury hearing (June 1983), a preliminary hearing (February 1984), and an appeal gone awry (November 1984)</a>.</p>
 <div class="image-grid">
 <figure class="clip-image">
   <video playsinline controls preload="none" poster="./full/pics/02.jpg">
     <source src="./full/mp4s/01_Landis_compressed.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-        <figcaption>Landis, shadowed by his pre-trial attorney, Harland Braun (1984).<marginalia data-type="pa"> Landis maintained an ontological objection to his being charged at all: “The idea that this could have been anything but an unforeseeable accident is not only wrong, it’s bewildering. If anyone would have thought that such a horrendous thing could have happened obviously we would have stopped.”</marginalia></figcaption>
+        <figcaption>Landis, shadowed by his pre-trial attorney, Harland Braun (1984).<marginalia data-type="pa"> Landis maintained an ontological objection to his being charged at all: "The idea that this could have been anything but an unforeseeable accident is not only wrong, it's bewildering. If anyone would have thought that such a horrendous thing could have happened obviously we would have stopped."</marginalia></figcaption>
     </figure></div>
-
 <p>Finally, in a landmark trial from July 1986-May 1987, co-producer/writer/director, John Landis<marginalia data-type="pa">(<em>Animal House, The Blues Brothers</em>)</marginalia>, along with two production subordinates <marginalia data-type="ch">(George Folsey, Jr., and Dan Allingham)</marginalia> and two technicians <marginalia data-type="ch">(Paul Stewart and Dorcey Wingo), </marginalia>faced Involuntary Manslaughter charges for the deaths. Landis et al—who faced two counts specifically for the illegal hiring, the so-called "office counts"—conceded that they had conspired to hire two children without work permits (a misdemeanor) but said they only did so in view of the late hour called for by the scene, not believing its production, as intended, to be dangerous or unethical.</p>
-
 <p>The filmmakers were eventually acquitted, with the civil case settled during closing arguments for approximately $2-million per family.</p>
-
 <details class="quote-toggle">
   <summary>
-    The verdict vindicated Landis and his Hollywood allies in their assertion that the accident had been 
+    The verdict vindicated Landis and his Hollywood allies in their assertion that the accident had been
     <span class="clickable-word">
       <u>unforeseeable</u><span class="punctuation collapsed">.</span><span class="punctuation expanded">:</span>
     </span></summary><br>
-
   <ul>
-    <li><p>“...an industrial accident, nothing more.” (Landis regular, Dan Aykroyd)</p></li>
-    <li><p>“...obviously a human catastrophe… not a criminal act.” (Universal Studios Production Executive, Sean Daniel)</p></li>
-    <li><p>“...a terrible tragedy, [...] terrible and horrible for everybody. But it was an accident. Which is eventually what the jury decided.” (<em>Twilight Zone</em> Executive Producer, Frank Marshall)</p></li>
+    <li><p>"...an industrial accident, nothing more." (Landis regular, Dan Aykroyd)</p></li>
+    <li><p>"...obviously a human catastrophe… not a criminal act." (Universal Studios Production Executive, Sean Daniel)</p></li>
+    <li><p>"...a terrible tragedy, [...] terrible and horrible for everybody. But it was an accident. Which is eventually what the jury decided." (<em>Twilight Zone</em> Executive Producer, Frank Marshall)</p></li>
   </ul>
 </details>
-
-<p>In the press, Landis even challenged the trial prosecutor’s integrity for pursuing criminal charges in the first place: “Candidly, Mrs. D’Agostino is grotesque, an aberration. And she is very unimportant. What is important is the Los Angeles District Attorney’s office spending this kind of money pursuing something that they know damn well is bogus.”<marginalia data-type="ci"> (Feldman, "Outraged: Landis Relieved but Calls Prosecution Dishonest," <em>Los Angeles Times,</em> June 2, 1987.)</marginalia></p>
-
+<p>In the press, Landis even challenged the trial prosecutor's integrity for pursuing criminal charges in the first place: "Candidly, Mrs. D'Agostino is grotesque, an aberration. And she is very unimportant. What is important is the Los Angeles District Attorney's office spending this kind of money pursuing something that they know damn well is bogus."<marginalia data-type="ci"> (Feldman, "Outraged: Landis Relieved but Calls Prosecution Dishonest," <em>Los Angeles Times,</em> June 2, 1987.)</marginalia></p>
 <p>And after that, it all pretty much went away.</p>
-
 <p>But in truth the case was fraught and controversial.</p>
-
 <details class="quote-toggle evidence-toggle">
   <summary>
     Despite some one-hundred witnesses to the accident, mostly crew, the set had been cleared by the time investigators arrived.
@@ -263,165 +223,122 @@ July 1st, 2025 <!--Ed. July 16th, 2026-->
     </span>
   </summary>
   <ul>
-    <li><p><a href="pages/dossier.html#section-06a" class="track-link" data-id="page8">One of the shot’s two audio recordings</a></p></li>
-    <li><p><a href="pages/dossier.html#section-06b" class="track-link" data-id="page9">The on-set photographer’s negatives</a></p></li>
-    <li><p><a href="pages/dossier.html#section-06c" class="track-link" data-id="page10">All of the Executive Producer’s <em>The Making of</em> documentary footage, except for a single shot of a technical rehearsal utilized by the defense</a></p></li>
-    <li><p><a href="pages/dossier.html#section-06e" class="track-link" data-id="page11">Several “thumbnail sketches” mentioned by Landis to the NTSB</a></p></li>
-    <li><p><a href="pages/dossier.html#section-06f" class="track-link" data-id="page12">All “scripts, notes, and graphic layouts” relating to the film’s production</a>, with two exceptions. (1) The third draft of the script (of four drafts total); and (2) a single top-down diagram of the set known as <a href="pages/dossier.html#section-07" class="track-link" data-id="page13">“the spotting plan,”</a> which included a depiction of a helicopter which had already crashed.</p></li>
+    <li><p><a href="pages/dossier.html#section-06a" class="track-link" data-id="page8">One of the shot's two audio recordings</a></p></li>
+    <li><p><a href="pages/dossier.html#section-06b" class="track-link" data-id="page9">The on-set photographer's negatives</a></p></li>
+    <li><p><a href="pages/dossier.html#section-06c" class="track-link" data-id="page10">All of the Executive Producer's <em>The Making of</em> documentary footage, except for a single shot of a technical rehearsal utilized by the defense</a></p></li>
+    <li><p><a href="pages/dossier.html#section-06e" class="track-link" data-id="page11">Several "thumbnail sketches" mentioned by Landis to the NTSB</a></p></li>
+    <li><p><a href="pages/dossier.html#section-06f" class="track-link" data-id="page12">All "scripts, notes, and graphic layouts" relating to the film's production</a>, with two exceptions. (1) The third draft of the script (of four drafts total); and (2) a single top-down diagram of the set known as <a href="pages/dossier.html#section-07" class="track-link" data-id="page13">"the spotting plan,"</a> which included a depiction of a helicopter which had already crashed.</p></li>
   </ul>
 </details>
-
 <details class="quote-toggle witness-toggle">
   <summary>
-    As well—most significantly, for our story—a man who turned out to be 
-    <span class="clickable-word"><u>one of the case’s key witnesses</u></span>, the movie’s Executive Producer, Frank Marshall (<em>Raiders of the Lost Ark, Poltergeist</em>), managed to avoid speaking with investigators throughout 1982–1987, despite domestic and international subpoenas.
+    As well—most significantly, for our story—a man who turned out to be
+    <span class="clickable-word"><u>one of the case's key witnesses</u></span>, the movie's Executive Producer, Frank Marshall (<em>Raiders of the Lost Ark, Poltergeist</em>), managed to avoid speaking with investigators throughout 1982–1987, despite domestic and international subpoenas.
   </summary>
-
   <figure class ="scrapbook-img">
     <img src="./full/pics/03.jpg" loading="lazy">
     <figcaption>Frank Marshall, Photographed in France, 1985.</figcaption>
   </figure>
-
   <ul>
-    <li><p><a href="pages/dossier.html#section-01a" class="track-link" data-id="page14">Marshall was informed about Landis’s intentions by a casting agent over a month in advance</a></p></li>
+    <li><p><a href="pages/dossier.html#section-01a" class="track-link" data-id="page14">Marshall was informed about Landis's intentions by a casting agent over a month in advance</a></p></li>
     <li><p><a href="pages/dossier.html#section-01g" class="track-link" data-id="page15">His signature appears on the cheque used to pay the children for their first night of work</a></p></li>
     <li><p><a href="pages/dossier.html#section-01j" class="track-link" data-id="page16">His accountant was reported by a production assistant to have provided her an envelope full of cash on the day of the accident</a></p></li>
     <li><p><a href="pages/dossier.html#section-01k" class="track-link" data-id="page17">He was on-set both nights the children were there, including during earlier shots with the children which also constituted legal violations</a></p></li>
     <li><p><a href="pages/dossier.html#section-01e" class="track-link" data-id="page18">In the chaotic aftermath of the accident, as the highest ranking member of the production in attendance, he made key decisions pertaining to the clearing of the set</a></p></li>
-    <li><p><a href="pages/dossier.html#section-01f" class="track-link" data-id="page19">He was documented by Landis’s secretary/typist as raiding Landis’s office for production materials the morning after the accident</a></p></li>
-    <li><p><a href="pages/dossier.html#section-01g" class="track-link" data-id="page20">Landis even testified that Marshall <em>explicitly approved the illegal hiring</em>, a story maintained by Landis’s two subordinates. This is especially significant since Marshall was an executive officer at both Twilight Zone Productions, and the payroll company, DISC Management Services Group, Inc., contracted by Warner Bros. to act as a watchdog on the production’s spending. Legally-speaking, according to the criteria for culpability established by the Division of Labor Standards Enforcement, this made Marshall a major person of interest.</a></p></li>
-    <li><p><a href="pages/dossier.html#section-13" class="track-link" data-id="page21">In February 1983, a domestic subpoena was issued for Marshall’s testimony, but Marshall was overseas filming <em>Indiana Jones and the Temple of Doom</em>. In June 1985, the defense wrote the DA a letter underscoring Marshall’s key role in the hiring. In June 1986 an international subpoena was issued for Marshall’s testimony. The detective assigned to the case tracked Marshall to London where he tried to serve it to him, but Marshall escaped out the back door into a car, and—according to a report by Scotland Yard—onto a chartered jet headed for Paris. By the time he finally surfaced in Spain in April 1987, as the result of an Interpol “Stop and Hold” order, the prosecution had already rested their case, and his testimony was no longer of any use.</a></p></li>
+    <li><p><a href="pages/dossier.html#section-01f" class="track-link" data-id="page19">He was documented by Landis's secretary/typist as raiding Landis's office for production materials the morning after the accident</a></p></li>
+    <li><p><a href="pages/dossier.html#section-01g" class="track-link" data-id="page20">Landis even testified that Marshall <em>explicitly approved the illegal hiring</em>, a story maintained by Landis's two subordinates. This is especially significant since Marshall was an executive officer at both Twilight Zone Productions, and the payroll company, DISC Management Services Group, Inc., contracted by Warner Bros. to act as a watchdog on the production's spending. Legally-speaking, according to the criteria for culpability established by the Division of Labor Standards Enforcement, this made Marshall a major person of interest.</a></p></li>
+    <li><p><a href="pages/dossier.html#section-13" class="track-link" data-id="page21">In February 1983, a domestic subpoena was issued for Marshall's testimony, but Marshall was overseas filming <em>Indiana Jones and the Temple of Doom</em>. In June 1985, the defense wrote the DA a letter underscoring Marshall's key role in the hiring. In June 1986 an international subpoena was issued for Marshall's testimony. The detective assigned to the case tracked Marshall to London where he tried to serve it to him, but Marshall escaped out the back door into a car, and—according to a report by Scotland Yard—onto a chartered jet headed for Paris. By the time he finally surfaced in Spain in April 1987, as the result of an Interpol "Stop and Hold" order, the prosecution had already rested their case, and his testimony was no longer of any use.</a></p></li>
   </ul>
 </details>
-
 </ul>
-<p>The <em>Twilight Zone</em> tragedy has been analyzed in three excellent books—<a href="https://archive.org/details/specialeffectsdi00labr/page/114/mode/2up" class="track-link" data-id="page22"><em>Special Effects</em> (LaBrecque, 1988)</a>; <em>Outrageous Conduct</em> (Farber and Green, 1988); and <a href="https://www.amazon.ca/Fly-Night-Secret-Spielberg-Twilight/dp/1634243641" class="track-link" data-id="page23"><em>Fly by Night</em> (Chain, 2022)</a>—all written by journalists who attended the trial. The absence of Marshall’s testimony is significant because it precluded his being asked even basic questions, under oath, about the degree of involvement of his boss, and Landis’s co-producer, Steven Spielberg. If Spielberg’s association is <a href="https://www.nytimes.com/2023/06/25/movies/the-twilight-zone-the-movie-accident.html" class="track-link" data-id="page24">remembered at all</a>, he’s <a href="https://podcasts.apple.com/ca/podcast/twilight-zone-the-movie-part-2/id1512847066?i=1000492078299" class="track-link" data-id="page25">usually considered</a> to have absolved himself of it admirably; but to those who have studied the case closely, the question remains obscure.</p>
-
-<p><em>Twilight Zone: The Movie</em> was an anthology film, featuring four segments by four different directors, including Spielberg, with Landis’s being the first to go to production. It was being produced in part by <a href="https://en.wikipedia.org/wiki/Amblin_Entertainment" class="track-link" data-id="page26">Amblin Entertainment</a>, the production company co-founded by Spielberg, Frank Marshall, and <a href="https://en.wikipedia.org/wiki/Kathleen_Kennedy_\(producer\" class="track-link" data-id="page27">Kathleen Kennedy</a>, Marshall’s future wife. We turn now to the particulars of their involvement in the production of <em>Twilight Zone</em>.</p>
-
+<p>The <em>Twilight Zone</em> tragedy has been analyzed in three excellent books—<a href="https://archive.org/details/specialeffectsdi00labr/page/114/mode/2up" class="track-link" data-id="page22"><em>Special Effects</em> (LaBrecque, 1988)</a>; <em>Outrageous Conduct</em> (Farber and Green, 1988); and <a href="https://www.amazon.ca/Fly-Night-Secret-Spielberg-Twilight/dp/1634243641" class="track-link" data-id="page23"><em>Fly by Night</em> (Chain, 2022)</a>—all written by journalists who attended the trial. The absence of Marshall's testimony is significant because it precluded his being asked even basic questions, under oath, about the degree of involvement of his boss, and Landis's co-producer, Steven Spielberg. If Spielberg's association is <a href="https://www.nytimes.com/2023/06/25/movies/the-twilight-zone-the-movie-accident.html" class="track-link" data-id="page24">remembered at all</a>, he's <a href="https://podcasts.apple.com/ca/podcast/twilight-zone-the-movie-part-2/id1512847066?i=1000492078299" class="track-link" data-id="page25">usually considered</a> to have absolved himself of it admirably; but to those who have studied the case closely, the question remains obscure.</p>
+<p><em>Twilight Zone: The Movie</em> was an anthology film, featuring four segments by four different directors, including Spielberg, with Landis's being the first to go to production. It was being produced in part by <a href="https://en.wikipedia.org/wiki/Amblin_Entertainment" class="track-link" data-id="page26">Amblin Entertainment</a>, the production company co-founded by Spielberg, Frank Marshall, and <a href="https://en.wikipedia.org/wiki/Kathleen_Kennedy_\(producer\" class="track-link" data-id="page27">Kathleen Kennedy</a>, Marshall's future wife. We turn now to the particulars of their involvement in the production of <em>Twilight Zone</em>.</p>
 <p>Spielberg first met Marshall, briefly, in 1973, on a Peter Bogdanovich movie shooting in Rome. Marshall, then working as the AD, kept his lunch brisk so that he could get back to the set. Spielberg thought back to Marshall in May 1977, in Hawaii, when George Lucas first pitched him <em>Raiders of the Lost Ark</em>.</p>
-
 <p>Years later, Marshall recalled:
-
 <div class="blockquote">
 <p>
 <a href="https://www.youtube.com/watch?v=6RSM9Y4Xwow" class="track-link" data-id="page28">He wanted someone who would protect him from a studio situation... someone to sort of be on his side and work with him, rather than <em>against</em> him... He wanted a producer who could actually get the movie made for a price, keep the momentum going on set... which is the way I like to do things.</a> (2022)</p>
 </div>
-
-<p>Spielberg met Kennedy in 1978 when she worked as a PA on Spielberg’s <i>SNL</i>-coded wartime comedy,<marginalia data-type="pa"> his first box office flop,</marginalia> <em>1941</em> (1979). She believed it was her organizational savvy that Spielberg found indispensable:</p>
-
+<p>Spielberg met Kennedy in 1978 when she worked as a PA on Spielberg's <i>SNL</i>-coded wartime comedy,<marginalia data-type="pa"> his first box office flop,</marginalia> <em>1941</em> (1979). She believed it was her organizational savvy that Spielberg found indispensable:</p>
 <div class="blockquote">
-  <p>He had little pieces of paper, backs of envelopes, tops of newspapers, anything he could get his hands on, on which he had written these notes and camera shots, drawn little figures. And he said, "Can you take these and make some sense of it?" ... So I gathered everything together and headed back to the office. I poured myself into this, all day, all night, going through, redrawing the little drawings, calling him a few times to clarify things I didn’t understand. And I made these little booklets, which I had stacked up on his desk when he came in. He was blown away. It seemed to me a certain amount of common sense, but for whatever reason, he had never had anyone organize things for him in that way before. From that point on, he gave me little jobs to do, things he wanted me to take care of... When Steven asked me to produce his next film, which later turned out to be <em>E.T.</em>, I was shocked. It seemed to come from out of the blue, but I think it was because he felt confident about the way I got things done for him. He had come to rely on me to get things done. And that is basically what a producer does. <marginalia data-type="ci">(qtd in McBride, 320)</marginalia></p>
+  <p>He had little pieces of paper, backs of envelopes, tops of newspapers, anything he could get his hands on, on which he had written these notes and camera shots, drawn little figures. And he said, "Can you take these and make some sense of it?" ... So I gathered everything together and headed back to the office. I poured myself into this, all day, all night, going through, redrawing the little drawings, calling him a few times to clarify things I didn't understand. And I made these little booklets, which I had stacked up on his desk when he came in. He was blown away. It seemed to me a certain amount of common sense, but for whatever reason, he had never had anyone organize things for him in that way before. From that point on, he gave me little jobs to do, things he wanted me to take care of... When Steven asked me to produce his next film, which later turned out to be <em>E.T.</em>, I was shocked. It seemed to come from out of the blue, but I think it was because he felt confident about the way I got things done for him. He had come to rely on me to get things done. And that is basically what a producer does. <marginalia data-type="ci">(qtd in McBride, 320)</marginalia></p>
 </div>
-
 <p>But in 2015, Spielberg emphasized her quick mind and creative suggestions:</p>
-
 <div class="blockquote">
-  <p>She was horrible at taking notes... but what she did know how to do was interrupt somebody in mid-sentence. We’d be pitching ideas back and forth, and Kathy—who was supposed to be writing these ideas down—suddenly put her pencil down and would say something like, "And what if he didn’t get the girl, but instead he got the dog?” (<a href="https://www.npr.org/2015/12/17/459976428/kathleen-kennedy-from-standing-in-line-to-see-star-wars-to-producing-it-herself" class="track-link" data-id="page29">NPR</a>)</p>
+  <p>She was horrible at taking notes... but what she did know how to do was interrupt somebody in mid-sentence. We'd be pitching ideas back and forth, and Kathy—who was supposed to be writing these ideas down—suddenly put her pencil down and would say something like, "And what if he didn't get the girl, but instead he got the dog?" (<a href="https://www.npr.org/2015/12/17/459976428/kathleen-kennedy-from-standing-in-line-to-see-star-wars-to-producing-it-herself" class="track-link" data-id="page29">NPR</a>)</p>
 </div>
-
-<p>Between the efforts of Spielberg, Marshall, Kennedy, and Lucas, <em>Raiders</em>—filmed primarily in North Africa—went off without a hitch. Together they rebooted Spielberg’s personal “loan-out" corporate entity, <a href="https://bizfileonline.sos.ca.gov/search/business" class="track-link" data-id="page30">Amblin Productions, Inc.</a> (est. 1970), as <a href="https://bizfileonline.sos.ca.gov/search/business" class="track-link" data-id="page31">Amblin Entertainment, Ltd.</a> (est. April 1980), which would go on to produce a fleet of family and adventure films and TV shows through the '80s and '90s. At the time the independent production company was housed in Building 102 on the Warner Bros. lot, where they had a multi-picture development deal. They only moved to their famous <a href="https://www.newyorker.com/magazine/1994/03/21/steven-spielberg-profile-schindlers-list" class="track-link" data-id="page32">Hacienda-style bungalow at Universal Studios in 1983</a>.</p>
-
+<p>Between the efforts of Spielberg, Marshall, Kennedy, and Lucas, <em>Raiders</em>—filmed primarily in North Africa—went off without a hitch. Together they rebooted Spielberg's personal "loan-out" corporate entity, <a href="https://bizfileonline.sos.ca.gov/search/business" class="track-link" data-id="page30">Amblin Productions, Inc.</a> (est. 1970), as <a href="https://bizfileonline.sos.ca.gov/search/business" class="track-link" data-id="page31">Amblin Entertainment, Ltd.</a> (est. April 1980), which would go on to produce a fleet of family and adventure films and TV shows through the '80s and '90s. At the time the independent production company was housed in Building 102 on the Warner Bros. lot, where they had a multi-picture development deal. They only moved to their famous <a href="https://www.newyorker.com/magazine/1994/03/21/steven-spielberg-profile-schindlers-list" class="track-link" data-id="page32">Hacienda-style bungalow at Universal Studios in 1983</a>.</p>
 <div class="image-grid">
     <figure>
-        <img src="./full/pics/04.jpg" loading="lazy">      
+        <img src="./full/pics/04.jpg" loading="lazy">
     </figure>
     <figure>
-        <img src="./full/pics/05.jpg" loading="lazy">      
-        <figcaption>Melissa Mathison (Screenwriter, E.T.), Spielberg, Kennedy, and Marshall circa 1981. Marshall and Kennedy began dating at the conclusion of Raiders after asking and receiving Spielberg’s blessing. <marginalia data-type="ci">(F&G 66)</marginalia></figcaption>
+        <img src="./full/pics/05.jpg" loading="lazy">
+        <figcaption>Melissa Mathison (Screenwriter, E.T.), Spielberg, Kennedy, and Marshall circa 1981. Marshall and Kennedy began dating at the conclusion of Raiders after asking and receiving Spielberg's blessing. <marginalia data-type="ci">(F&G 66)</marginalia></figcaption>
     </figure></div>
-
-<p>Spielberg had been the one to discover the <em>Twilight Zone</em> movie project on Warner Bros.’ development slate in January of 1982; he brought it to Landis in March, proposing a collaboration, knowing Landis also loved the classic television IP.</p>
-
-<p>Although the two first met at Martha’s Vineyard in 1974, when Landis had been invited to contribute his ideas for what would become <em>Close Encounters</em> over the course of a week of conversations, they only became friendly in 1978, after Spielberg reached out to Landis <a href="./full/mp4s/03_Rivalry_compressed.mp4" class="track-link" data-id="page33">following the success of <em>Animal House</em></a> and invited him over for dinner. As detailed by Chain<marginalia data-type="ci"> (Ch. 6)</marginalia>, the two exhibited behaviour reflective of a strained friendship, with Landis perceiving that Spielberg had used some of his ideas for <em>Close Encounters</em> without compensation at a time in his career when he was desperate for a paid and/or credited professional opportunity. As well, Julia Phillips—the producer of <em>Close Encounters</em>, and the author of the notorious Hollywood tell-all, <a href="https://archive.org/details/youllnevereatlun0000phil/page/572/mode/2up?q=spielberg" class="track-link" data-id="page34"><em>You’ll Never Eat Lunch in This Town Again</em> <marginalia data>(1991)</marginalia></a>—wrote: “Steven hated him, although Michael and I always wondered if he felt threatened, Landis being so child-prodigy and all, Steven pretty much feeling he had the corner on that arena. There’s always someone younger than you<marginalia data-type="ci">(480)</marginalia>." </p>
-
-<p>According to <a href="https://www.twilightzonemuseum.com/media/movie/index.php" class="track-link" data-id="page35">several interviews</a> detailing the early stages of production, Spielberg was heavily invested in the development of the film, both with regards to his own segment, and the narrative as a whole. Joe Dante (<em>Gremlins</em>), the director of the movie’s third segment, explained that the segments were originally conceived as more continuous and less discrete than they ended up becoming, with narrative segues, recurring characters, and other winks to earlier sequences. George Miller (<em>Mad Max</em>), the director of the fourth segment, said that when he was brought on the project in May 1982, he met with all three of Spielberg, Marshall, and Kennedy to discuss it, indicating that generally speaking the project was on the Amblin group’s radar<marginalia data-type="ci"> (qtd. in McBride, 343)</marginalia>.</p>
+<p>Spielberg had been the one to discover the <em>Twilight Zone</em> movie project on Warner Bros.' development slate in January of 1982; he brought it to Landis in March, proposing a collaboration, knowing Landis also loved the classic television IP.</p>
+<p>Although the two first met at Martha's Vineyard in 1974, when Landis had been invited to contribute his ideas for what would become <em>Close Encounters</em> over the course of a week of conversations, they only became friendly in 1978, after Spielberg reached out to Landis <a href="./full/mp4s/03_Rivalry_compressed.mp4" class="track-link" data-id="page33">following the success of <em>Animal House</em></a> and invited him over for dinner. As detailed by Chain<marginalia data-type="ci"> (Ch. 6)</marginalia>, the two exhibited behaviour reflective of a strained friendship, with Landis perceiving that Spielberg had used some of his ideas for <em>Close Encounters</em> without compensation at a time in his career when he was desperate for a paid and/or credited professional opportunity. As well, Julia Phillips—the producer of <em>Close Encounters</em>, and the author of the notorious Hollywood tell-all, <a href="https://archive.org/details/youllnevereatlun0000phil/page/572/mode/2up?q=spielberg" class="track-link" data-id="page34"><em>You'll Never Eat Lunch in This Town Again</em> <marginalia data>(1991)</marginalia></a>—wrote: "Steven hated him, although Michael and I always wondered if he felt threatened, Landis being so child-prodigy and all, Steven pretty much feeling he had the corner on that arena. There's always someone younger than you<marginalia data-type="ci">(480)</marginalia>." </p>
+<p>According to <a href="https://www.twilightzonemuseum.com/media/movie/index.php" class="track-link" data-id="page35">several interviews</a> detailing the early stages of production, Spielberg was heavily invested in the development of the film, both with regards to his own segment, and the narrative as a whole. Joe Dante (<em>Gremlins</em>), the director of the movie's third segment, explained that the segments were originally conceived as more continuous and less discrete than they ended up becoming, with narrative segues, recurring characters, and other winks to earlier sequences. George Miller (<em>Mad Max</em>), the director of the fourth segment, said that when he was brought on the project in May 1982, he met with all three of Spielberg, Marshall, and Kennedy to discuss it, indicating that generally speaking the project was on the Amblin group's radar<marginalia data-type="ci"> (qtd. in McBride, 343)</marginalia>.</p>
 <p>As well, by 1982, Spielberg was in a state of self-described film-mania:</p>
-
 <div class="blockquote">
 	<p><a href="./full/mp4s/02_Celluloid_compressed.mp4" class="track-link" data-id="page36">...And all of a sudden I realized that I was a non-entity. I was existing only on celluloid, and I was losing my own identification with Steven Spielberg. And I was forming sprocket holes down both sides of my face and frame lines across my body. And I was starting to move at about eight-frames-a-second, which is too fast to be moving, in movie jargon.</a> <marginalia data-type="ci">(<a href="https://youtu.be/iM-SYk0JAuU?si=QUMUR32_xKjzPOS7&amp;t=101" class="track-link" data-id="page37">60 Minutes Australia, 1982</a>)</marginalia></p>
 </div>
-
-<p>Spielberg was already embroiled in a PR controversy over his rumoured <a href="https://youtu.be/DGZanwuNO7o?si=GCBKot52VZrdgRY5" class="track-link" data-id="page38">backseat directing</a> of Tobe Hooper’s <em>Poltergeist</em>, when Spielberg’s credited role was Producer.</p>
-
+<p>Spielberg was already embroiled in a PR controversy over his rumoured <a href="https://youtu.be/DGZanwuNO7o?si=GCBKot52VZrdgRY5" class="track-link" data-id="page38">backseat directing</a> of Tobe Hooper's <em>Poltergeist</em>, when Spielberg's credited role was Producer.</p>
 <div class="image-grid no-bg-grid">
-
     <figure>
-        <a href="./full/mp4s/Poltergeist_Teaser_Tiny.mp4" class="track-link" data-id="page39"><img src="./full/pics/06.jpg" loading="lazy"></a>      
-        <figcaption>The DGA fined Spielberg $15,000 for “denigrating the role of the director” by way of the size of the names in the credits of the trailer, ordered MGM to redo them, and to apologize to Hooper publicly. It’s unlikely the studio would have released the trailer without Spielberg’s approval.<marginalia data-type="pa">Spielberg took out his own two ads. All of this followed persistent rumours (continuing through at least May 1982) that Spielberg had been the real director of the project (McBride 336-40).</marginalia></figcaption>
+        <a href="./full/mp4s/Poltergeist_Teaser_Tiny.mp4" class="track-link" data-id="page39"><img src="./full/pics/06.jpg" loading="lazy" alt="Poltergeist teaser trailer credits"></a>
+        <figcaption>The DGA fined Spielberg $15,000 for "denigrating the role of the director" by way of the size of the names in the credits of the trailer, ordered MGM to redo them, and to apologize to Hooper publicly. It's unlikely the studio would have released the trailer without Spielberg's approval.<marginalia data-type="pa">Spielberg took out his own two ads. All of this followed persistent rumours (continuing through at least May 1982) that Spielberg had been the real director of the project (McBride 336-40).</marginalia></figcaption>
     </figure>
-
     <figure>
-        <img src="./full/pics/07.jpg" loading="lazy">      
-        <figcaption>On June 2nd, 1982, Spielberg published a letter in two trade magazines apologizing for the perception that he was the one steering the ship. <marginalia data-type="pa"><a href="pages/dossier.html#section-09" class="track-link" data-id="page40">Note the typist’s initials</a>.</marginalia></figcaption>
+        <img src="./full/pics/07.jpg" loading="lazy">
+        <figcaption>On June 2nd, 1982, Spielberg published a letter in two trade magazines apologizing for the perception that he was the one steering the ship. <marginalia data-type="pa"><a href="pages/dossier.html#section-09" class="track-link" data-id="page40">Note the typist's initials</a>.</marginalia></figcaption>
     </figure>
 </div>
-
 <p>Marshall spoke about the accident on the record once, in 1990, during an <a href="https://www.latimes.com/archives/la-xpm-1990-07-18-ca-714-story.html" class="track-link" data-id="page41">interview with the Los Angeles Times</a>.</p>
-
 <div class="newspaper-block">
-	<p>Asked to comment on those matters during an interview for “Arachnophobia,” Marshall called the stories about his alleged evasion of subpoenas “all hype. There’s no truth to it at all.” <marginalia data-type="pa">[...]</marginalia></p>
-
-	<p>“Actually I was here (Los Angeles) a long time, two years, and nobody ever talked to me,” Marshall said. “Then we went off to England and made ‘Empire of the Sun,’ ‘Roger Rabbit’ and ‘Indiana Jones and the Last Crusade.’ So I lived in London, and [during] the time most of the trial was going on, we were in China (filming ‘Empire of the Sun’).</p>
-
-	<p>“So, I was inaccessible. And I didn’t really feel that I had anything to add that wasn’t already out there, than what had already been revealed.”</p>
+	<p>Asked to comment on those matters during an interview for "Arachnophobia," Marshall called the stories about his alleged evasion of subpoenas "all hype. There's no truth to it at all." <marginalia data-type="pa">[...]</marginalia></p>
+	<p>"Actually I was here (Los Angeles) a long time, two years, and nobody ever talked to me," Marshall said. "Then we went off to England and made 'Empire of the Sun,' 'Roger Rabbit' and 'Indiana Jones and the Last Crusade.' So I lived in London, and [during] the time most of the trial was going on, we were in China (filming 'Empire of the Sun').</p>
+	<p>"So, I was inaccessible. And I didn't really feel that I had anything to add that wasn't already out there, than what had already been revealed."</p>
 </div>
-
 <p>The article also notes, however:</p>
-
 <div class="newspaper-block">
-	<p>While Marshall himself was not indicted in the case, deputy district attorney Gilbert Garcetti told reporters after the trial that his office made “every effort possible to subpoena Frank Marshall but he was able to get out of our hands.”</p>
+	<p>While Marshall himself was not indicted in the case, deputy district attorney Gilbert Garcetti told reporters after the trial that his office made "every effort possible to subpoena Frank Marshall but he was able to get out of our hands."</p>
 </div>
-
-<p>The problem, for those who would understand the case, is motivating Marshall’s actions (or non-actions as they may be).</p>
-
+<p>The problem, for those who would understand the case, is motivating Marshall's actions (or non-actions as they may be).</p>
 <div class="image-grid">
     <figure>
         <img src="./full/pics/08.jpg" loading="lazy">
         <figcaption>Marshall and Spielberg circa 1981.</figcaption>
     </figure></div>
-
-<p>Marshall is implicated by the actions of Bonne Radford, Amblin's longtime accountant, who also worked for Twilight Zone Productions, Inc. (the production entity created for the project), as well as <a href="pages/dossier.html#section-10" class="track-link" data-id="page42">DISC Management Services Group, Inc.</a>—Marshall’s payroll management company—and Amblin Entertainment<marginalia data-type="pa"> (along with two of her sisters, one of whom was Marshall’s personal secretary)</marginalia>. A 75-year-old Warner Bros. accounting executive,<marginalia data-type="ch">Jim Henderling</marginalia>, told the police and testified that the day before the children arrived on set, July 20th, Radford inquired with him about how to go about hiring two child extras without going through the Screen Extras Guild and then later that day called again, supposedly unrelatedly, asking him to co-sign a $2,000 "personal cash advance" cheque for Landis’s Associate Producer. He raised his suspicions with his boss, a VP of production,<marginalia data-type="ch"> Ed Morey,</marginalia> but was advised to "go ahead and sign the cheque, because they really couldn't refuse a producer." <marginalia data-type="ci"> (Police Report)</marginalia></p> 
-
-<p>As well, a young office PA<marginalia data-type="ch">, Carolyn Lee-Epstein,</marginalia> told the police and testified that the day of the accident, July 22nd, she picked up an envelope containing $1,000 in cash from Radford "who seemed to be expecting her" from an address on the Warner Bros. lot. LaBrecque, at least, claims that building was <a href="https://youtu.be/8K1Crn34cEg?si=2auiPNsDI6hhKx-5" class="track-link" data-id="page43">Amblin Entertainment</a><marginalia data-type="ci"> (22; cf. 176)</marginalia>. Landis’s offices were located on the Universal Studios lot at the time.</p>
-
-<p>If the testimony of these credible witnesses is to be believed, then on whose authority was Radford facilitating this illegal act? It’s unlikely she would have done so on behalf of Folsey or Landis. And if Marshall—as stands to reason—advised her to do it, then who advised Marshall? Why would Marshall go out on a limb to facilitate John Landis’s being able to film two children at night for a special effects scene?</p>
-
+<p>Marshall is implicated by the actions of Bonne Radford, Amblin's longtime accountant, who also worked for Twilight Zone Productions, Inc. (the production entity created for the project), as well as <a href="pages/dossier.html#section-10" class="track-link" data-id="page42">DISC Management Services Group, Inc.</a>—Marshall's payroll management company—and Amblin Entertainment<marginalia data-type="pa"> (along with two of her sisters, one of whom was Marshall's personal secretary)</marginalia>. A 75-year-old Warner Bros. accounting executive,<marginalia data-type="ch">Jim Henderling</marginalia>, told the police and testified that the day before the children arrived on set, July 20th, Radford inquired with him about how to go about hiring two child extras without going through the Screen Extras Guild and then later that day called again, supposedly unrelatedly, asking him to co-sign a $2,000 "personal cash advance" cheque for Landis's Associate Producer. He raised his suspicions with his boss, a VP of production,<marginalia data-type="ch"> Ed Morey,</marginalia> but was advised to "go ahead and sign the cheque, because they really couldn't refuse a producer." <marginalia data-type="ci"> (Police Report)</marginalia></p>
+<p>As well, a young office PA<marginalia data-type="ch">, Carolyn Lee-Epstein,</marginalia> told the police and testified that the day of the accident, July 22nd, she picked up an envelope containing $1,000 in cash from Radford "who seemed to be expecting her" from an address on the Warner Bros. lot. LaBrecque, at least, claims that building was <a href="https://youtu.be/8K1Crn34cEg?si=2auiPNsDI6hhKx-5" class="track-link" data-id="page43">Amblin Entertainment</a><marginalia data-type="ci"> (22; cf. 176)</marginalia>. Landis's offices were located on the Universal Studios lot at the time.</p>
+<p>If the testimony of these credible witnesses is to be believed, then on whose authority was Radford facilitating this illegal act? It's unlikely she would have done so on behalf of Folsey or Landis. And if Marshall—as stands to reason—advised her to do it, then who advised Marshall? Why would Marshall go out on a limb to facilitate John Landis's being able to film two children at night for a special effects scene?</p>
 <div class="image-grid">
     <figure>
-        <img src="./full/pics/09.jpg" loading="lazy">      
-        <figcaption>Photo of children from night before the accident, July 21st, 1982 <marginalia data-type="pa">(the shoot’s originally intended wrap date, and scheduled “family day.”)</marginalia></figcaption>
+        <img src="./full/pics/09.jpg" loading="lazy">
+        <figcaption>Photo of children from night before the accident, July 21st, 1982 <marginalia data-type="pa">(the shoot's originally intended wrap date, and scheduled "family day.")</marginalia></figcaption>
     </figure></div>
-
-<p>Marshall was present the originally-scheduled last night of shooting<marginalia data-type="pa"> (July 21st/22nd)</marginalia>, when the two children <marginalia data-type="pa">(6-and-7-years-old)</marginalia> were kept up until 5:30am filming some close-up shots in an interior hut scene. Sometime earlier—around 4:00am, according to Landis—the 1st AD informed him it would not be possible to complete the three major special effects setups and various pick-ups they still had left on the schedule to shoot. Landis testified that he confirmed it with Marshall. It was only then as they were wrapping up that Folsey, as he was paying the parents out (with five $100 bills each), asked them if they could come back the next night. The scene inside the hut, in particular, they said, had taken longer than they expected. Folsey told them that their children would be wrapped “first thing,” within an hour or an hour and a half.</p>
-
+<p>Marshall was present the originally-scheduled last night of shooting<marginalia data-type="pa"> (July 21st/22nd)</marginalia>, when the two children <marginalia data-type="pa">(6-and-7-years-old)</marginalia> were kept up until 5:30am filming some close-up shots in an interior hut scene. Sometime earlier—around 4:00am, according to Landis—the 1st AD informed him it would not be possible to complete the three major special effects setups and various pick-ups they still had left on the schedule to shoot. Landis testified that he confirmed it with Marshall. It was only then as they were wrapping up that Folsey, as he was paying the parents out (with five $100 bills each), asked them if they could come back the next night. The scene inside the hut, in particular, they said, had taken longer than they expected. Folsey told them that their children would be wrapped "first thing," within an hour or an hour and a half.</p>
 <p>Marshall was also present some 16-hours later, for the first shot of the children on the night of July 22nd.</p>
-
 <div class="image-grid">
     <figure class="clip-image">
       <video playsinline controls preload="none" poster="./full/gifs/03-ezgif.com-optimize.gif">
         <source src="./full/mp4s/d04.mp4" type="video/mp4" loading="lazy">
         Your browser does not support the video tag.
       </video>
-
-        <figcaption>2 of 3 camera angles (one redundant) recovered from the 9:30pm shot, at which time Marshall was present and, according to Chain, so was Kennedy<marginalia data-type="ci">(Chain Ch. 47)</marginalia>.<marginalia data-type="pa"> If you were a producer of children’s and family films, and you watched this scene, would you be alarmed or think the above might be less than fully legal? Twice (before the shot and during) Morrow was observed by those present to drop (before, during an informal “run-through”) Myca, and (during the actual take) Renee into the water. Landis testified that he asked the children whether or not they could swim, and that “one said yes, and the other said no.”</marginalia></figcaption>
+        <figcaption>2 of 3 camera angles (one redundant) recovered from the 9:30pm shot, at which time Marshall was present and, according to Chain, so was Kennedy<marginalia data-type="ci">(Chain Ch. 47)</marginalia>.<marginalia data-type="pa"> If you were a producer of children's and family films, and you watched this scene, would you be alarmed or think the above might be less than fully legal? Twice (before the shot and during) Morrow was observed by those present to drop (before, during an informal "run-through") Myca, and (during the actual take) Renee into the water. Landis testified that he asked the children whether or not they could swim, and that "one said yes, and the other said no."</marginalia></figcaption>
     </figure></div>
-
 <p>Marshall was also on-set for the following shot, while the families were being sequestered in a trailer about a mile away, near the entrance of the park, asked to please wait around for one last shot, where the children would finally be carried all the way across the river, as their parents had been lead to believe would happen within a few hours of their arrival on the first day of filming.</p>
-
     <div class="image-grid"><figure class="clip-image">
       <video playsinline controls preload="none" poster="./full/gifs/d06.gif">
         <source src="./full/mp4s/d05.mp4" type="video/mp4" loading="lazy">
         Your browser does not support the video tag.
       </video>
-        <figcaption>The 11:30pm shot<marginalia data-type="pa">, during which the pilot (a Vietnam veteran who had never worked on a Hollywood studio feature) was startled by an unexpected blast and turned suddenly to get away, into another blast that nearly torched the crew inside. The maneuvering was particularly difficult since the helicopter was instructed to hover, as the UPM (defendant Dan Allingham, hanging out the helicopter’s left window) had been tasked with keeping a heavy, unwieldy spotlight tracking Morrow.</marginalia></figcaption>
+        <figcaption>The 11:30pm shot<marginalia data-type="pa">, during which the pilot (a Vietnam veteran who had never worked on a Hollywood studio feature) was startled by an unexpected blast and turned suddenly to get away, into another blast that nearly torched the crew inside. The maneuvering was particularly difficult since the helicopter was instructed to hover, as the UPM (defendant Dan Allingham, hanging out the helicopter's left window) had been tasked with keeping a heavy, unwieldy spotlight tracking Morrow.</marginalia></figcaption>
     </figure></div>
-
-<p>So why didn’t Spielberg’s right-hand man, the producer of <i>Raiders of the Lost Ark</i> and <i>Poltergeist</i>, ever question the safety or legality of what was unfolding before his eyes?
-
+<p>So why didn't Spielberg's right-hand man, the producer of <i>Raiders of the Lost Ark</i> and <i>Poltergeist</i>, ever question the safety or legality of what was unfolding before his eyes?
 <details class="quote-toggle">
-  <summary>The significance of Marshall’s non-cooperation was pointed out explicitly by Landis’s lawyer, Harland Braun on November 4th, 1985, in the first of two letters written at the request of the DA’s office in <u>a final bid to get the office counts “dispo’d.”</u></summary>
-
+  <summary>The significance of Marshall's non-cooperation was pointed out explicitly by Landis's lawyer, Harland Braun on November 4th, 1985, in the first of two letters written at the request of the DA's office in <u>a final bid to get the office counts "dispo'd."</u></summary>
   <div class="letter">
     <marginalia data-type="pa">
       <p>Law Offices of Harland W. Braun</p>
@@ -444,99 +361,63 @@ July 1st, 2025 <!--Ed. July 16th, 2026-->
       <p>Re: People vs. Landis, et al.</p>
       <p></p>
     </marginalia>
-
 	<p><marginalia data-type="ci"> [...] </marginalia>The issue involved in the "Twilight Zone" case as charged by your office is whether the defendants knew about a serious danger on the set and chose to disregard that danger. Simple interviews with Spielberg, Marshall, and Kennedy would reveal that these highly placed and acknowledged experts knew that a scene was being shot in their own movie in which actors were being used in a scene with a helicopter and special effects. [...]</p>
   <p>Frank Marshall was on the set on the night of the accident as well as on the previous night. Marshall saw the children present and saw them in the 9:30 shot in which they were held by Vic Morrow in a scene with a helicopter and special effects. Marshall was present the whole evening and observed the 11:30 sequence involving Morrow, the 2:00 rehearsal as well as the scene in which the accident occurred. Marshall was the producer of the "Twilight Zone" and participated at meetings in which the hiring of the children was discussed and agreed upon. Since the statute of limitations has now expired, he has no fifth amendment right and if asked will hopefully tell the truth. But what must be emphasized again is the fact that his participation in the hiring of the children without permits was viewed as a "technical" violation that in no way suggested that anyone was being illegally put in meaningful danger.</p>
   <p>Marshall and Kennedy could verify that Kennedy called the Department of Labor to determine whether permits could be obtained for minors after hours. It was only after her call received a negative response, that the decision was made to employ the children without permits. Again, Ms. Kennedy had no belief that there was any danger even though she was intimately acquainted with the nature of the shot and the use of the children. In fact, she was on the set the prior night when the scenes filmed on the fatal night were scheduled to be shot.</p>
-  <p>With respect to Mr. Spielberg, Marshall and Kennedy will be able to state whether he knew that children were to be employed without permits. It could be reasonably inferred that given the close relationship between Spielberg, Marshall and Kennedy and Spielberg’s close supervision of his own movies, that it would be almost inconceivable that Marshall and Kennedy would not tell Spielberg that children were to be employed without permits on Spielberg’s own movie.</p>
-  <p>Your office’s statement that there was an exhaustive investigation is not only false with respect to Marshall, but is also false with respect to Spielberg. Spielberg was able to deflect the investigation away from himself by simply submitting a letter stating that he was not on the set the night of the accident. His full and complete knowledge and approval of what was to take place must be assumed and never has been disputed.</p>
+  <p>With respect to Mr. Spielberg, Marshall and Kennedy will be able to state whether he knew that children were to be employed without permits. It could be reasonably inferred that given the close relationship between Spielberg, Marshall and Kennedy and Spielberg's close supervision of his own movies, that it would be almost inconceivable that Marshall and Kennedy would not tell Spielberg that children were to be employed without permits on Spielberg's own movie.</p>
+  <p>Your office's statement that there was an exhaustive investigation is not only false with respect to Marshall, but is also false with respect to Spielberg. Spielberg was able to deflect the investigation away from himself by simply submitting a letter stating that he was not on the set the night of the accident. His full and complete knowledge and approval of what was to take place must be assumed and never has been disputed.</p>
   <p>What other major witness could avoid questioning by signing a piece of paper? Your office never asked Spielberg a single question about the accident or the hiring of the children. Your claim that Spielberg was "unavailable" is simply false.</p>
   <p>Associate Producer Kathleen Kennedy (Spielberg segment) herself made the blind call to the Department of Labor. It was only when she received a negative reply to a question of getting permits for night work that the decision was made to employ the children without permits. Kennedy was on the set the night before the accident when the children were present and the special effects were being set up while the helicopter rehearsed. Why has she not been interviewed?</p></div>
-
 </details>
-
 <p>This was no small claim: it was a plausible, unchallenged exonerating narrative (for these counts). These letters resulted in the DA issuing a second, international, subpoena for Marshall, to no avail. Landis would go on to testify (January 1987) that Marshall gave him explicit permission to pursue the illegal hiring.</p>
-
 <p>Spielberg (or his representatives) gave four statements addressing the matter over the years.</p>
-
-<p>First, in a legal filing in response to the Chen family civil lawsuit filed on August 2nd, 1982:</p> 
-
+<p>First, in a legal filing in response to the Chen family civil lawsuit filed on August 2nd, 1982:</p>
 <div class="letter"><p>Spielberg is informed and believes and thereon alleges that at the time and place of the events complained of, plaintiffs and each of them were not exercising ordinary care, caution or prudence to prevent the injuries sustained by them or by decedent and that, therefore, the injuries alleged were proximately caused by the negligence or comparative negligence of the plaintiffs.</p>
 </div>
 <p>Second, in response to the sworn testimony of a special effects truck driver, given to the NTSB on November 5th, 1982.
-
-<div class="police-report">Mr. Pittman stated that following the crash scene, he had assisted Mr. Landis and one of the children’s parents in obtaining a vehicle to leave the set, and likewise, had secured a vehicle for STEVEN SPIELBERG to leave the set.<marginalia data-type="pa"> Following this he left the set, driving the 10-ton powder truck followed by Ted [Theldynamos Triantefellow], who was driving the special effects pickup truck. He stated that both of them drove directly to the Burbank Studios. He stated that it was the following day when he and members of the special effects crew met at the Burbank Studios and off-loaded material.</marginalia></div>
-
-<p>But Pittman’s account was dubious, as he’d also admitted to being drunk on set and making <a href="pages/dossier.html#section-12" class="track-link" data-id="page44">beer and liquor runs for the SFX team through the day and night of the accident.</a></p>
-<p>Spielberg replied to the NTSB’s request for clarification on the matter by way of a signed affidavit:</p>
-
+<div class="police-report">Mr. Pittman stated that following the crash scene, he had assisted Mr. Landis and one of the children's parents in obtaining a vehicle to leave the set, and likewise, had secured a vehicle for STEVEN SPIELBERG to leave the set.<marginalia data-type="pa"> Following this he left the set, driving the 10-ton powder truck followed by Ted [Theldynamos Triantefellow], who was driving the special effects pickup truck. He stated that both of them drove directly to the Burbank Studios. He stated that it was the following day when he and members of the special effects crew met at the Burbank Studios and off-loaded material.</marginalia></div>
+<p>But Pittman's account was dubious, as he'd also admitted to being drunk on set and making <a href="pages/dossier.html#section-12" class="track-link" data-id="page44">beer and liquor runs for the SFX team through the day and night of the accident.</a></p>
+<p>Spielberg replied to the NTSB's request for clarification on the matter by way of a signed affidavit:</p>
 <div class="letter">
 In response to your request, I was never at the Indian Dunes location of <em>Twilight Zone</em> on the night of the accident or at any other time. I declare under penalty of perjury that the foregoing is true and correct, executed at Los Angeles, California, this first day of December, 1982.</div>
-
-<p>Pittman soon admitted he’d probably had Spielberg confused with Frank Marshall.</p>
+<p>Pittman soon admitted he'd probably had Spielberg confused with Frank Marshall.</p>
 <p>Third, a short comment to <em>Los Angeles Times</em> Reporter Dale Pollock:</p>
-
 <div class="newspaper-block">
-<p>This has been the most interesting year of my film career… It has mixed the best, the success of <em>E.T.,</em> with the worst, the <em>Twilight Zone</em> tragedy. A mixture of ecstasy and grief. It’s made me grow up a little more. The accident cast a pall on all 150 people who worked on this production. We are still just sick to the center of our souls. I don’t know anybody who it <em>hasn’t</em> affected.
-A movie is a fantasy—it’s light and shadow flickering on a screen. No movie is worth dying for. I think people are standing up much more now than ever before to producers and directors who ask too much. If something isn’t safe, it’s the right and responsibility of every actor or crew member to yell, 'Cut!'" (<em>Spielberg Philosophical Over E.T. Defeat</em>, April 13, 1983)</p></div>
-
-<p>And fourth, after an almost verbatim restatement of his previous year’s comment to the same reporter:</p>
-
+<p>This has been the most interesting year of my film career… It has mixed the best, the success of <em>E.T.,</em> with the worst, the <em>Twilight Zone</em> tragedy. A mixture of ecstasy and grief. It's made me grow up a little more. The accident cast a pall on all 150 people who worked on this production. We are still just sick to the center of our souls. I don't know anybody who it <em>hasn't</em> affected.
+A movie is a fantasy—it's light and shadow flickering on a screen. No movie is worth dying for. I think people are standing up much more now than ever before to producers and directors who ask too much. If something isn't safe, it's the right and responsibility of every actor or crew member to yell, 'Cut!'" (<em>Spielberg Philosophical Over E.T. Defeat</em>, April 13, 1983)</p></div>
+<p>And fourth, after an almost verbatim restatement of his previous year's comment to the same reporter:</p>
 <div class="newspaper-block">
 <p>It was tough on all of us, all 390 people involved in making the movie, and it continues to be. (<em>Spielberg Gets Place to Settle Down</em>, May 21, 1984)</p>
 </div>
-
-<p>The only shift was that the number of people involved had been adjusted to include the entire production, suggesting that he belonged to the general category, i.e., the production as a whole, rather than the specific category, i.e., Landis’s segment<marginalia data-type="ci"> (LaBrecque)</marginalia>.</p>
-
+<p>The only shift was that the number of people involved had been adjusted to include the entire production, suggesting that he belonged to the general category, i.e., the production as a whole, rather than the specific category, i.e., Landis's segment<marginalia data-type="ci"> (LaBrecque)</marginalia>.</p>
 <p>When reporter Sandy Kenyon brought up the accident during a 1985 CNN interview for <em>The Color Purple</em>, Spielberg waved his hands and asked that the camera be turned off. (F&G)</p>
-
-<p>Suffice to say, Marshall had his own reasons for evading investigators. On <a href="pages/dossier.html#section-13" class="track-link" data-id="page45">a critical examination of the evidence</a>, it’s very difficult to believe Marshall didn’t know something illegal was going on with regards to the children on the set July 21-23. Whether he knew the children were going to be used illegally <em>for the 2:20am shot specifically</em> remains (something of) an open question.</p>
-
+<p>Suffice to say, Marshall had his own reasons for evading investigators. On <a href="pages/dossier.html#section-13" class="track-link" data-id="page45">a critical examination of the evidence</a>, it's very difficult to believe Marshall didn't know something illegal was going on with regards to the children on the set July 21-23. Whether he knew the children were going to be used illegally <em>for the 2:20am shot specifically</em> remains (something of) an open question.</p>
 <details class="quote-toggle"><summary>
-
-The Locations Manager, Richard Vane, who had worked with Marshall on <em>Poltergeist</em>, <span class="clickable-word"><u>testified (only once, at the grand jury)</u></span>, that during the final shot Marshall, who was standing beside him, turned to say, “those are dolls he’s picking up, aren’t they?”</summary>
-
+The Locations Manager, Richard Vane, who had worked with Marshall on <em>Poltergeist</em>, <span class="clickable-word"><u>testified (only once, at the grand jury)</u></span>, that during the final shot Marshall, who was standing beside him, turned to say, "those are dolls he's picking up, aren't they?"</summary>
 <div class="transcript">
-
 <p>District Attorney (Gary Kesselman): Did you know children were being used?</p>
-
-<p>RV: No, I thought we were going to use dolls. Or, I didn’t really think. My job is not to be involved in that sort of stuff. But I 
+<p>RV: No, I thought we were going to use dolls. Or, I didn't really think. My job is not to be involved in that sort of stuff. But I
 just assumed we were going to have dolls. Because that would be the ordinary way that that sort of thing would be done.</p>
-
 <p>Standing next to camera crane.</p>
-
 <p>Frank Marshall was standing next to him for 2:20 shot.</p>
-
-<p>“It was pretty dark, we could make out Vic Morrow and John landis. It was just outlines as far as Morrow was concerned. Landis, we could see pretty well. He had a megaphone.”</p>
-
-<p>When he [Vane] saw Morrow pick up kids he thought it was dolls “and John and Vic had some conversation and he picked up what turned out to be the kids right after that.”</p>
-
-<p>[Vane] turned to Frank Marshall—can’t quote conversation exactly: “but the substance of it was that we just assumed he was picking up—unconsciously, but this all happened very rapidly—we were just assuming they were dolls.”</p>
-
-<p>“You had some conversation with Frank Marshall in which it was your impression Frank Marshall was stating to you that he believed they were dolls also?”</p>
-
-<p>“Yes.”</p>
-
+<p>"It was pretty dark, we could make out Vic Morrow and John landis. It was just outlines as far as Morrow was concerned. Landis, we could see pretty well. He had a megaphone."</p>
+<p>When he [Vane] saw Morrow pick up kids he thought it was dolls "and John and Vic had some conversation and he picked up what turned out to be the kids right after that."</p>
+<p>[Vane] turned to Frank Marshall—can't quote conversation exactly: "but the substance of it was that we just assumed he was picking up—unconsciously, but this all happened very rapidly—we were just assuming they were dolls."</p>
+<p>"You had some conversation with Frank Marshall in which it was your impression Frank Marshall was stating to you that he believed they were dolls also?"</p>
+<p>"Yes."</p>
 </div></details>
-
-<p><details class="quote-toggle"><summary> But Vane was the highest ranking member of the production to admit to <span class="clickable-word"><u>participating in a conspiracy to conceal the presence of the children</u></span> from a particular Fire Safety Officer<marginalia data-type="ch">, Jack Tice,</marginalia> known to be trained as an on-set children’s welfare advocate—up to and including the 2:20am shot. Vane testified that he believed the children were only going to be used for <a href="pages/dossier.html#section-14" class="track-link" data-id="page46">a short scene still to come.</a></summary></p>
-
+<p><details class="quote-toggle"><summary> But Vane was the highest ranking member of the production to admit to <span class="clickable-word"><u>participating in a conspiracy to conceal the presence of the children</u></span> from a particular Fire Safety Officer<marginalia data-type="ch">, Jack Tice,</marginalia> known to be trained as an on-set children's welfare advocate—up to and including the 2:20am shot. Vane testified that he believed the children were only going to be used for <a href="pages/dossier.html#section-14" class="track-link" data-id="page46">a short scene still to come.</a></summary></p>
 <div class="transcript">
-<p>“Did you know they would be there in violation of the law?</p>
-<p>“Yes, I knew that they were going to be there. I did not think that they would be in the explosion scene. There was a scene that was going to follow that in which the kids were in a shelter.”</p>
+<p>"Did you know they would be there in violation of the law?</p>
+<p>"Yes, I knew that they were going to be there. I did not think that they would be in the explosion scene. There was a scene that was going to follow that in which the kids were in a shelter."</p>
 </div></details>
-
-<p>Spielberg never distanced himself from Marshall despite the negligence or subpoenas. Not only Marshall, but <a href="https://www.imdb.com/name/nm0888994/" class="track-link" data-id="page47">Vane</a> and <a href="https://www.imdb.com/name/nm0705511/" class="track-link" data-id="page48">Radford</a> also continued to flourish within the Amblin organization, with Vane graduating to Producer with <em>Harry and the Hendersons</em> in 1987, and Radford graduating to Producer with <em>We’re Back! A Dinosaur’s Story</em> in 1994.</p>
-<p>The two children were only added to Landis’s segment with the third draft of the script, dated June 13th, 1982. In the story, Morrow’s character—a bigot—delivers an embittered tirade to his drinking buddies in a San Fernando bar one night, and then steps out into Nazi-occupied France (1941). Shortly, he is mistaken for Jewish and chased by the officers, before time-jumping again to the deep south (1954), where he continues to be chased, but now by the Ku Klux Klan. Next, he finds himself in Vietnam, where he’s set upon with gunfire not by Vietnamese soldiers, who pass right by his hiding spot—but by U.S. marines. He is finally buffeted back to the Nazi timeline, where he is hauled into a freight car. He reaches out of the slats to his friends, whom he can see stumbling out of the bar, but they are unresponsive to his cries for help; after all, to them, he’s in another dimension.</p>
-<p>Landis conceived of his segment in the vein of the socially-conscious episodes of the original TV show, calling it “the only political or moral episode in the film.” On <a href="pages/dossier.html#section-16" class="track-link" data-id="page49">a close read</a>, Landis’s segment appears to be a critique of America’s role in the Vietnam war, putting it into a continuum with the most vile political movements of the 20th century, possibly even alluding to <a href="" class="track-link" data-id="page50">a specific military operation.</a></p>
-<p>Landis testified that the recurring complaint he received from Warner Bros., as related to him through Production Executive <a href="https://en.wikipedia.org/wiki/Lucy_Fisher" class="track-link" data-id="page51">Lucy Fisher</a>, whom <a href="pages/dossier.html#section-15" class="track-link" data-id="page52">Chain claims</a> was hired on Spielberg’s recommendation to help oversee the production deal, was that the story was just too cynical.</p>
-
+<p>Spielberg never distanced himself from Marshall despite the negligence or subpoenas. Not only Marshall, but <a href="https://www.imdb.com/name/nm0888994/" class="track-link" data-id="page47">Vane</a> and <a href="https://www.imdb.com/name/nm0705511/" class="track-link" data-id="page48">Radford</a> also continued to flourish within the Amblin organization, with Vane graduating to Producer with <em>Harry and the Hendersons</em> in 1987, and Radford graduating to Producer with <em>We're Back! A Dinosaur's Story</em> in 1994.</p>
+<p>The two children were only added to Landis's segment with the third draft of the script, dated June 13th, 1982. In the story, Morrow's character—a bigot—delivers an embittered tirade to his drinking buddies in a San Fernando bar one night, and then steps out into Nazi-occupied France (1941). Shortly, he is mistaken for Jewish and chased by the officers, before time-jumping again to the deep south (1954), where he continues to be chased, but now by the Ku Klux Klan. Next, he finds himself in Vietnam, where he's set upon with gunfire not by Vietnamese soldiers, who pass right by his hiding spot—but by U.S. marines. He is finally buffeted back to the Nazi timeline, where he is hauled into a freight car. He reaches out of the slats to his friends, whom he can see stumbling out of the bar, but they are unresponsive to his cries for help; after all, to them, he's in another dimension.</p>
+<p>Landis conceived of his segment in the vein of the socially-conscious episodes of the original TV show, calling it "the only political or moral episode in the film." On <a href="pages/dossier.html#section-16" class="track-link" data-id="page49">a close read</a>, Landis's segment appears to be a critique of America's role in the Vietnam war, putting it into a continuum with the most vile political movements of the 20th century, possibly even alluding to <a href="" class="track-link" data-id="page50">a specific military operation.</a></p>
+<p>Landis testified that the recurring complaint he received from Warner Bros., as related to him through Production Executive <a href="https://en.wikipedia.org/wiki/Lucy_Fisher" class="track-link" data-id="page51">Lucy Fisher</a>, whom <a href="pages/dossier.html#section-15" class="track-link" data-id="page52">Chain claims</a> was hired on Spielberg's recommendation to help oversee the production deal, was that the story was just too cynical.</p>
 <div class="transcript"><p>They were concerned that I painted Bill so harsh... His character was so ugly. They said, "He is so unsympathetic. Why watch the episode? What are you trying to prove?" And, I thought, they were right. We discussed if there was a way of literally having him redeemed. Not just learn an object lesson, more or less, but act upon it. And it was out of that meeting that we came up with the idea of an additional scene to try to soften the character.</p></div>
-
 <details class="quote-toggle"><summary>
-
 The new series of scenes had the bigot encountering two orphans in a bombed out Vietnamese village. Witnessing their innocence triggers his recognition of his own humanity; a reversal preparing his act of heroism moments later, when he <span class="clickable-word"><u>saves the children from a marauding military assault helicopter in a daring river-cross rescue</u></span>.</summary>
-
 <div class="scriptexcerpt">
 <p>28 EXT. ASIAN RIVER - NIGHT</p>
 <p>Bill comes out from the swamp onto the banks of the fairly wide river. Across the water he sees some sort of village: thatched buildings, maybe nine or ten of them. Light bulbs loosely strung on wires hung between the huts illuminating the sparse community at the base of the cliff on the water.</p>
@@ -555,50 +436,42 @@ The new series of scenes had the bigot encountering two orphans in a bombed out 
 <div class = "scriptexcerpt-center">BILL<br>Where is everybody? Where are your people?</div>
 <p>The kids just look at him.</p>
 <div class = "scriptexcerpt-center"><p>BILL<br>Are you by yourselves?</p></div>
-<p>The Boy takes Bill’s hand.</p>
+<p>The Boy takes Bill's hand.</p>
 <div class = "scriptexcerpt-center"><p>BILL<br>I need help. Can you help me? Can you take me to somewhere safe?</p></div>
 <marginalia data-type="pa"><div class = "script-mark"><p>[MARK ON PAGE, RIGHT MARGIN: X]</p></div></marginalia>
 <p>Bill realizes that these kids are as helpless as he is.</p>
-<div class = "scriptexcerpt-center"><p>BILL<br>Do you have any food? I guess you don’t have any beer either.</p></div>
-<p>Bill’s arm hurts and he sits back down. The Boy sits next to him and immediately falls asleep leaning on Bill’s lap.</p>
+<div class = "scriptexcerpt-center"><p>BILL<br>Do you have any food? I guess you don't have any beer either.</p></div>
+<p>Bill's arm hurts and he sits back down. The Boy sits next to him and immediately falls asleep leaning on Bill's lap.</p>
 <div class = "scriptexcerpt-center"><p>BILL<br>(To Girl)<br>Is this your brother?</p></div>
 <p>The Girl stares.</p>
-<div class = "scriptexcerpt-center"><p>BILL<br>I won’t hurt you baby. I’m just as lost and scared as you are.</p></div>
+<div class = "scriptexcerpt-center"><p>BILL<br>I won't hurt you baby. I'm just as lost and scared as you are.</p></div>
 <p>Suddenly LOUD NOISE and WIND as a HUEY HELICOPTER appears from over the cliff and hovers over the village.</p>
 <p>Bill stands as both kids cling to him in terror.</p>
-<div class = "scriptexcerpt-center"><p>BILL<br>(shouts)<br>Help us! I’ve got children down here!</p></div>
-<p>30 HELICOPTER’S P.O.V. - NIGHT</p>
+<div class = "scriptexcerpt-center"><p>BILL<br>(shouts)<br>Help us! I've got children down here!</p></div>
+<p>30 HELICOPTER'S P.O.V. - NIGHT</p>
 <p>Bill waving his arms.</p>
 <p>31 EXT. VILLAGE - NIGHT</p>
 <p>The machine gun mounted in the copter opens fire on Bill. </p>
 <p>He grabs the kids and runs for cover.</p>
-<p><div class = "scriptexcerpt-center"><p>BILL<br>(screaming)<br>Stop it! I’ve got children here!<br>Stop it! Stop it!<p></div>
+<p><div class = "scriptexcerpt-center"><p>BILL<br>(screaming)<br>Stop it! I've got children here!<br>Stop it! Stop it!<p></div>
 <p>Bill clutching the kids crouches behind one of the huts. The helicopter turns on a powerful spotlight and hovers over the village sweeping it with its beam.</p>
-<div class = "scriptexcerpt-center"><p>BILL<br>(To kids)<br>I’ll keep you safe kids. I promise. Nothing will hurt you, I swear to God!</p></div>
+<div class = "scriptexcerpt-center"><p>BILL<br>(To kids)<br>I'll keep you safe kids. I promise. Nothing will hurt you, I swear to God!</p></div>
 <p>The helicopter makes another pass over the village and then one of the huts EXPLODES in a spectacular fireball. One after another the buildings blow up in flames as the helicopter systematically destroys the village in its search for Bill.</p>
 <p>Finally Bill, holding a child in each arm, makes a herculean effort and runs for the shallow river.</p>
 <p>With the village burning behind them Bill runs as best he can across the river.</p>
 <p>32 ASIAN RIVER - NIGHT</p>
 <p>The helicopter spots them and guns blazing, heads toward the river. As Bill carrying the kids desperately makes his way through the water, the helicopter makes several passes, strafing the area. Bill makes it to shore and sees a wooden shed. Making a super-human attempt he manages to get all three of them inside. He stacks the wood inside against the door, then huddles with the kids in the corner.</p>
 </div></details>
-
 <p>The third draft was the only one that was voluntarily turned over by the production to the NTSB. It was markedly different from the first two drafts—introducing the extended Vietnam sequence featuring the two children. But it was not the draft being filmed that night.</p>
-
-<p>It was only thanks to the diligence of Landis’s studio-assigned typist, Alpha Campbell, <marginalia data-type="pa">a former aide to Alfred Hitchcock,</marginalia> that all four drafts were saved.<marginalia> Landis had asked her to destroy them; instead, she wrote on the cover of the third draft, "Note, per John Landis, all existing copies of script should be thrown away," and kept them locked away. Later, she was able to supply them to the police.</marginalia></p>
-
-<p>The <a href="pages/dossier.html#section-06d" class="track-link" data-id="page53">fourth draft</a> of the script contains only a few small changes, of little apparent significance. The most obvious is the addition of a new prop, "a broken and naked Barbie doll", a MacGuffin presumably intended to help focus the spectator’s attention on the spiritual reversal taking place at that moment in the story.</p>
-
-<div class = "scriptexcerpt-center">BILL<br>I won’t hurt you baby. I’m just as lost and scared as you are.</div>
+<p>It was only thanks to the diligence of Landis's studio-assigned typist, Alpha Campbell, <marginalia data-type="pa">a former aide to Alfred Hitchcock,</marginalia> that all four drafts were saved.<marginalia> Landis had asked her to destroy them; instead, she wrote on the cover of the third draft, "Note, per John Landis, all existing copies of script should be thrown away," and kept them locked away. Later, she was able to supply them to the police.</marginalia></p>
+<p>The <a href="pages/dossier.html#section-06d" class="track-link" data-id="page53">fourth draft</a> of the script contains only a few small changes, of little apparent significance. The most obvious is the addition of a new prop, "a broken and naked Barbie doll", a MacGuffin presumably intended to help focus the spectator's attention on the spiritual reversal taking place at that moment in the story.</p>
+<div class = "scriptexcerpt-center">BILL<br>I won't hurt you baby. I'm just as lost and scared as you are.</div>
 <div class = "scriptexcerpt">The little Girl hands Bill a broken and naked Barbie Doll.</div>
 <div class = "scriptexcerpt-center">BILL<br>(genuinely touched)<br>Thank you honey. Thank you very much.</div>
 <div class = "scriptexcerpt">Suddenly LOUD NOISE and WIND as a HUEY HELICOPTER appears from over the cliff and hovers over the village.</div>
-
 <p>This addition is anticipated by a redundant copy of the third draft kept by Campbell, which has a pencilled note on the cover—"Read 6/16/82"—and two pencilled Xs before and after where the prop would go on to be added to the script. The doll is visible being held in Renee's left hand during the fatal sequence.</p>
-
-<p>Is it possible that Spielberg’s notes in some way influenced the development of Landis’s script? Besides Spielberg’s own creative and financial investment in the film, his opinion on Landis’s segment would’ve been highly sought-after by the studio. The hypothetical conduit would be Production Executive Lucy Fisher, whom Spielberg would’ve had every opportunity to consult with privately. This matches Spielberg’s insulated operating methods <a href="pages/dossier.html#section-09" class="track-link" data-id="page54">recounted by Producer Julia Phillips in her memoir</a>. It’s also plausible, both in light of Spielberg and Landis’s reported professional rivalry, and the recent overdose of Landis’s comic muse, John Belushi (March 5th, 1982), that Spielberg would opt to provide his feedback on Landis’s first drafts discreetly, as a matter of tact.</p>
-
-<p>The extreme reticence of the production to turn over any production materials belies the possibility that Spielberg may have had a significant hand in the design of the fatal sequence involving two children.</p> 
-
+<p>Is it possible that Spielberg's notes in some way influenced the development of Landis's script? Besides Spielberg's own creative and financial investment in the film, his opinion on Landis's segment would've been highly sought-after by the studio. The hypothetical conduit would be Production Executive Lucy Fisher, whom Spielberg would've had every opportunity to consult with privately. This matches Spielberg's insulated operating methods <a href="pages/dossier.html#section-09" class="track-link" data-id="page54">recounted by Producer Julia Phillips in her memoir</a>. It's also plausible, both in light of Spielberg and Landis's reported professional rivalry, and the recent overdose of Landis's comic muse, John Belushi (March 5th, 1982), that Spielberg would opt to provide his feedback on Landis's first drafts discreetly, as a matter of tact.</p>
+<p>The extreme reticence of the production to turn over any production materials belies the possibility that Spielberg may have had a significant hand in the design of the fatal sequence involving two children.</p>
 <div class="sketch-sequence thumbnail-row">
   <figure>
     <img src="./full/pics/d053.jpg" alt="1" loading="lazy">
@@ -613,237 +486,171 @@ The new series of scenes had the bigot encountering two orphans in a bombed out 
     <figcaption>Raiders (3)</figcaption>
   </figure>
 </div>
-
 <p>By mid-1982, Spielberg had entered a newly prolific storyboarding phase. As part of the new production regiment that came along with <em>Raiders</em>, Spielberg was storyboarding more than ever. His original boards were filtered through four illustrators <marginalia>(McBride 321).</marginalia></p>
 <p>By <em>Temple of Doom</em>, Spielberg is emphatic about the centrality of storyboards and thumbnail sketches to his process, describing drawing 4,000 individual frames for the film, filtered by three illustrators.</p>
-
 <div class = "blockquote">
-<p>When I’m sketching an angle, I draw seven or eight frames that tell a small story. I do the thumbnails myself, which are often absolutely impossible to interpret, and I need to stand over the artist to explain which side is up. These shots are all subject to change, and I usually don’t shoot every one. I always overdraw. I draw more than I can possibly shoot in one two-hour movie. Then I begin cutting the storyboards down, taking seven or eight different frames, and finding one shot that symbolizes everything I want to say in those drawings. That gives it economy and substance and a lot more energy. I cram every bit of visual information into one frame. (<a href="https://theasc.com/articles/spielberg-temple-of-doom" class="track-link" data-id="page55">American Cinematographer</a>)</p></div>
-
-<p>Again, Landis, at his NTSB interview panel just five days after the accident, when asked by a Cal/OSHA representative if there were any written plans for the sequence with the helicopter flying and the explosions going off, reportedly answered, “there were lots of thumbnail sketches.”<marginalia data-type="ci"> (Chain Ch. 16; cf. Ch. 26.)</marginalia> However, neither these thumbnail sketches of the scene-to-be, nor any of the other studio-budgeted pre-production graphical materials, ever turned up, save for a single well-corroborated top-down sketch of the set, which included <a href="pages/dossier.html#section-07" class="track-link" data-id="page56">“by some ungodly coincidence”</a> (to quote prosecutor Kesselman) a depiction of an already-crashed helicopter.</p>
-
-<p>It’s certainly possible that Marshall simply, absent-mindedly, exercised extremely poor judgement in neglecting to follow up on serious and credible warnings about danger to the safety of children under his (legal) supervision. It’s also possible Landis is referring to thumbnail sketches he himself drew, for a scene he himself conceived or planned in its most critical respects. In the absence of further testimony or evidence, the answer remains sealed in the black box of Spielberg’s own psyche.</p>
-
+<p>When I'm sketching an angle, I draw seven or eight frames that tell a small story. I do the thumbnails myself, which are often absolutely impossible to interpret, and I need to stand over the artist to explain which side is up. These shots are all subject to change, and I usually don't shoot every one. I always overdraw. I draw more than I can possibly shoot in one two-hour movie. Then I begin cutting the storyboards down, taking seven or eight different frames, and finding one shot that symbolizes everything I want to say in those drawings. That gives it economy and substance and a lot more energy. I cram every bit of visual information into one frame. (<a href="https://theasc.com/articles/spielberg-temple-of-doom" class="track-link" data-id="page55">American Cinematographer</a>)</p></div>
+<p>Again, Landis, at his NTSB interview panel just five days after the accident, when asked by a Cal/OSHA representative if there were any written plans for the sequence with the helicopter flying and the explosions going off, reportedly answered, "there were lots of thumbnail sketches."<marginalia data-type="ci"> (Chain Ch. 16; cf. Ch. 26.)</marginalia> However, neither these thumbnail sketches of the scene-to-be, nor any of the other studio-budgeted pre-production graphical materials, ever turned up, save for a single well-corroborated top-down sketch of the set, which included <a href="pages/dossier.html#section-07" class="track-link" data-id="page56">"by some ungodly coincidence"</a> (to quote prosecutor Kesselman) a depiction of an already-crashed helicopter.</p>
+<p>It's certainly possible that Marshall simply, absent-mindedly, exercised extremely poor judgement in neglecting to follow up on serious and credible warnings about danger to the safety of children under his (legal) supervision. It's also possible Landis is referring to thumbnail sketches he himself drew, for a scene he himself conceived or planned in its most critical respects. In the absence of further testimony or evidence, the answer remains sealed in the black box of Spielberg's own psyche.</p>
 <p>This being said, I believe a third vector of analysis is worth considering before we cast the matter to history.</p>
-
 <div class="image-grid-strict169">
     <figure>
         <a href="https://linktr.ee/jurassictime?fbclid=IwY2xjawJ8rvlleHRuA2FlbQIxMABicmlkETFpWmRBYm02cUR1R01ySzV4AR7klSYAz2ldEe1rv5gaCqQpvUheLjYQ-rw8WFNcdeq4QA1QJrPjkoWvl6iRWw_aem_-L44-Eeqd1hrPcO_QPeoNg" class="track-link" data-id="page57"><img src="./full/pics/10.jpg" loading="lazy"></a>
         <figcaption><a href="https://linktr.ee/jurassictime?fbclid=IwY2xjawJ8rvlleHRuA2FlbQIxMABicmlkETFpWmRBYm02cUR1R01ySzV4AR7klSYAz2ldEe1rv5gaCqQpvUheLjYQ-rw8WFNcdeq4QA1QJrPjkoWvl6iRWw_aem_-L44-Eeqd1hrPcO_QPeoNg" class="track-link" data-id="page58">Jurassic Park early storyboards.</a> Based on thumbnail sketches by Steven Spielberg (1990). There is no mention of a doll, pigtails, or Asian Lex in any draft of the book or script.</figcaption>
     </figure>
-
 <figure>
     <img src="./full/pics/01.jpg" loading="lazy">
      <figcaption>"Broken and naked Barbie doll" prop not pictured.</figcaption></figure>
   </div>
-
 <div class="image-grid">
     <figure>
         <img src="./full/pics/11.jpg" loading="lazy">
-        <figcaption>Scene 68<marginalia data-type="pa"><a href="./full/mp4s/04_Bubble_compressed.mp4" class="track-link" data-id="page59">. Spielberg explains the “protective bubble.”</a></marginalia></figcaption>
+        <figcaption>Scene 68<marginalia data-type="pa"><a href="./full/mp4s/04_Bubble_compressed.mp4" class="track-link" data-id="page59">. Spielberg explains the "protective bubble."</a></marginalia></figcaption>
     </figure>
-
     <figure>
         <img src="./full/pics/12.jpg" loading="lazy">
         <figcaption>Scene 72</figcaption>
     </figure>
-
     <figure>
         <img src="./full/pics/13.jpg" loading="lazy">
         <figcaption>Scene 75<marginalia data-type="pa"> (approx.—early drafts only)</marginalia></figcaption>
     </figure>
-
     <figure>
         <img src="./full/pics/15.jpg" loading="lazy">
         <figcaption>Scene 84</figcaption>
     </figure>
-
     <figure>
         <img src="./full/pics/16.jpg" loading="lazy">
         <figcaption>Scene 137 (Rotunda)</figcaption>
     </figure>
-
     <figure>
         <img src="./full/pics/17.jpg" loading="lazy">
         <figcaption>Scene 137 (Rotunda)</figcaption>
     </figure>
-
 </div>
-
-<p>According to <em>Jurassic Park</em> illustrator Dave Lowry: 
-
-    <div class="blockquote"><a href="./full/mp3s/01.mp3" class="track-link" data-id="page60"><p>The thing about a Steven movie is that Steven storyboards it first. And they carve out time for him to be able to sit and draw his rough thumbnails, and then our job becomes interpreting and re-drawing it as illustrators do, making them prettier drawings. But the bulk of—99% of—the shot ideas and the action, the schtick—I mean a lot of it’s in the script of course, it’s written as part of the story, all that happens—but the visualizing of it, and the making of those Spielberg moments is all Steven.</p></a>
+<p>According to <em>Jurassic Park</em> illustrator Dave Lowry:
+    <div class="blockquote"><a href="./full/mp3s/01.mp3" class="track-link" data-id="page60"><p>The thing about a Steven movie is that Steven storyboards it first. And they carve out time for him to be able to sit and draw his rough thumbnails, and then our job becomes interpreting and re-drawing it as illustrators do, making them prettier drawings. But the bulk of—99% of—the shot ideas and the action, the schtick—I mean a lot of it's in the script of course, it's written as part of the story, all that happens—but the visualizing of it, and the making of those Spielberg moments is all Steven.</p></a>
 </div>
-
 <p>One of the setpieces stood above the rest: the main road T-Rex attack, a central story moment presenting key problems for the Visual Effects department.</p>
 <div class="image-grid">
-
 <figure>
           <img src="./full/pics/d056.jpg" loading="lazy">
           <figcaption><marginalia data-type="pa"> Early concept art by Craig Mullens.</marginalia></figcaption>
         </figure>
-
     <figure>
-        <img src="./full/pics/d057.jpg" loading="lazy">      
-        <figcaption>According to <a href="https://jurassictime.wixsite.com/memoirs/rick-carters-jurassic-park" class="track-link" data-id="page61">Production Designer Rick Carter,</a> Spielberg not only approved but “designed” the scene.</figcaption>
+        <img src="./full/pics/d057.jpg" loading="lazy">
+        <figcaption>According to <a href="https://jurassictime.wixsite.com/memoirs/rick-carters-jurassic-park" class="track-link" data-id="page61">Production Designer Rick Carter,</a> Spielberg not only approved but "designed" the scene.</figcaption>
     </figure>
   </div>
-
-    <p>By the time this sequence got to Koepp, it had already been locked. “I was handed a pile of storyboards.<marginalia data-type="pa"> [...]</marginalia> The visual sequence was <em>done</em>, I just typed it up. And I got a very nice compliment, he said, “boy, that action is all so well-described.”</p>
-
-    <p> Carter observed that Spielberg begins by envisioning a physical layout: “once he knows what the space is—that’s very important, to know where things are—he’ll just start playing a projector in his head. He’s open to contributions, and he’ll talk it through, but he’ll actually draw these funny little frames which are incredibly detailed if you know how to look at them.</p>
-
+    <p>By the time this sequence got to Koepp, it had already been locked. "I was handed a pile of storyboards.<marginalia data-type="pa"> [...]</marginalia> The visual sequence was <em>done</em>, I just typed it up. And I got a very nice compliment, he said, "boy, that action is all so well-described."</p>
+    <p> Carter observed that Spielberg begins by envisioning a physical layout: "once he knows what the space is—that's very important, to know where things are—he'll just start playing a projector in his head. He's open to contributions, and he'll talk it through, but he'll actually draw these funny little frames which are incredibly detailed if you know how to look at them.</p>
 <details class="quote-toggle evidence-toggle">
   <summary>
-
 <p>In general, <a href="pages/dossier.html#section-17" class="track-link" data-id="page62">the drafts of <em>Jurassic Park</em></a> are rife with <span class="clickable-word">
       <u>practical effects set-pieces collapsing along the vertical axis</u></span>, replaying the dynamics of the <em>Twilight Zone</em> accident from various points of view—a man, boy, and girl engaged by a powerful force from above, with special priority to the height of approx. 25-feet.</summary> These include:</p>
 <ul>
 <li>The helicopter descending onto a jungle clinic (novel; Carter; Koepp1)</li>
 <li>The helicopter descending onto the dig site (Crichton2; Carter; all Koepp)</li>
-<li>The helicopter’s turbulent descent onto Isla Nublar (all versions)</li>
-<li>The T-Rex attacks the car, with Lex and Tim inside (all versions; in Koepp they are “pinned” to their seats).</li>
-<li>The T-Rex lifting and dropping the car with Tim and Lex inside (novel through Carter; afterwards, the Rex just rolls the car, in Koepp’s Tim is “pinned” to the ground)</li>
+<li>The helicopter's turbulent descent onto Isla Nublar (all versions)</li>
+<li>The T-Rex attacks the car, with Lex and Tim inside (all versions; in Koepp they are "pinned" to their seats).</li>
+<li>The T-Rex lifting and dropping the car with Tim and Lex inside (novel through Carter; afterwards, the Rex just rolls the car, in Koepp's Tim is "pinned" to the ground)</li>
 <li>The T-Rex pushing the car over the ledge, with Grant and Lex hanging on below (Marmo and all subsequent versions)</li>
 <li>Grant and Tim climbing down the tree, avoiding being crushed by the car (all versions)</li>
-<li>Grant and the kids avoid swooping pterodactyls in the aviary (novel; removed during Crichton’s first draft)</li>
+<li>Grant and the kids avoid swooping pterodactyls in the aviary (novel; removed during Crichton's first draft)</li>
 <li>Grant and the kids climb the electric fence (Marmo and all subsequent versions)</li>
-<li>T-Rex attack during river rafting (removed with Koepp’s first draft; in Carter’s the raft is “pinned” by a falling tree)</li>
-<li>Skeleton collapses in the Visitor’s Centre, “pinning” Hammond, Tim, or raptors to the ground variously (Crichton’s first draft and on)</li>
+<li>T-Rex attack during river rafting (removed with Koepp's first draft; in Carter's the raft is "pinned" by a falling tree)</li>
+<li>Skeleton collapses in the Visitor's Centre, "pinning" Hammond, Tim, or raptors to the ground variously (Crichton's first draft and on)</li>
 <li>T-Rex attacks the escaping helicopter (Carter, Marmo)</li>
 </ul>
 </details>
-
 <div class="image-grid">
-
     <figure>
         <img src="./full/pics/18.jpg" loading="lazy">
-        <figcaption>Hammond’s fate in Crichton’s first draft (September 1990).</figcaption>
+        <figcaption>Hammond's fate in Crichton's first draft (September 1990).</figcaption>
     </figure>
-
     <figure>
-        <img src="./full/pics/22.jpg" loading="lazy">      
-        <figcaption>Hammond is played by Sir Richard Attenborough, whose Gandhi (1982) won the Oscar over E.T. in April 1983.<marginalia data-type="pa">Spielberg said he was touched by Attenborough’s graciousness during the 1983 awards season. Before 
-        accepting his Golden Globe, Attenborough approached Spielberg and said, “This isn’t right, this should be yours.”</marginalia> According to Koepp, <a href="https://podcasts.apple.com/ca/podcast/script-apart/id1518622561?i=1000616197924" class="track-link" data-id="page63">“Steven identified with him, whether consciously or not.”</a></figcaption>
+        <img src="./full/pics/22.jpg" loading="lazy">
+        <figcaption>Hammond is played by Sir Richard Attenborough, whose Gandhi (1982) won the Oscar over E.T. in April 1983.<marginalia data-type="pa">Spielberg said he was touched by Attenborough's graciousness during the 1983 awards season. Before
+        accepting his Golden Globe, Attenborough approached Spielberg and said, "This isn't right, this should be yours."</marginalia> According to Koepp, <a href="https://podcasts.apple.com/ca/podcast/script-apart/id1518622561?i=1000616197924" class="track-link" data-id="page63">"Steven identified with him, whether consciously or not."</a></figcaption>
     </figure>
-
 </div>
-
-<p>Another eerie detail is the amount Hammond’s financiers are being sued for by a family of a young worker killed in a velociraptor attack fraudulently represented as an “industrial accident” (the story’s inciting incident), echoing the damages claimed by the Chen and Le families and eventually paid out to them. No such detail is present in Crichton’s novel or any of the earlier drafts.</p>
-
-
+<p>Another eerie detail is the amount Hammond's financiers are being sued for by a family of a young worker killed in a velociraptor attack fraudulently represented as an "industrial accident" (the story's inciting incident), echoing the damages claimed by the Chen and Le families and eventually paid out to them. No such detail is present in Crichton's novel or any of the earlier drafts.</p>
 <div class="image-grid">
     <figure>
-
-  <img src="./full/pics/19.jpg" alt="Thumbnail" style="max-width: 100%; height: auto;" loading="lazy">   
+  <img src="./full/pics/19.jpg" alt="Thumbnail" style="max-width: 100%; height: auto;" loading="lazy">
         <figcaption>May 1st, 1992 draft of Jurassic Park<marginalia data-type="pa"> (Koepp)</marginalia>.</figcaption>
     </figure>
-
     <figure>
-  <img src="./full/pics/20.jpg" alt="Thumbnail" style="max-width: 100%; height: auto;" loading="lazy">   
+  <img src="./full/pics/20.jpg" alt="Thumbnail" style="max-width: 100%; height: auto;" loading="lazy">
         <figcaption>June 2nd, 1992 draft of Jurassic Park<marginalia data-type="pa"> (Koepp)</marginalia>.</figcaption>
     </figure>
-    
+
     <figure>
-  <img src="./full/pics/21.jpg" alt="Thumbnail" style="max-width: 100%; height: auto;" loading="lazy">      
+  <img src="./full/pics/21.jpg" alt="Thumbnail" style="max-width: 100%; height: auto;" loading="lazy">
         <figcaption>August 26th, 1992 final draft of Jurassic Park<marginalia data-type="pa"> (Koepp)</marginalia>.</figcaption>
     </figure>
-
 </div>
-
-<p>Spielberg has always been the first to point to the autobiographical tendencies of his work, with particular emphasis on <em>E.T.</em> (1982), <em>Catch Me If You Can</em> (2002), and <em>The Fabelmans</em> (2022). <em>The Fabelmans</em> especially reflects a deep respect for Freudian tropes, such as the Oedipus complex<marginalia data-type="pa">(<a href="./full/mp4s/05_clip1_compressed.mp4" class="track-link" data-id="page64">clip</a>)</marginalia> and castration anxiety<marginalia data-type="pa">(<a href="./full/mp4s/06_clip2_compressed.mp4" class="track-link" data-id="page65"> clip</a>)</marginalia>. 
-
-Speaking of <em>Catch Me If You Can</em> in 2002, Spielberg said, “it takes, sometimes, something very Freudian to get me to say, “Well, this is interesting; I better read beyond page 50.”<marginalia data-type="ci"> (qtd. in McBride, 498; see also <a href="https://openlibrary.org/books/OL24747428M/The_Jaws_log" class="track-link" data-id="page66"><em>The Jaws Log</em></a> Ch. 10, albeit in jest)</marginalia></p>
-
+<p>Spielberg has always been the first to point to the autobiographical tendencies of his work, with particular emphasis on <em>E.T.</em> (1982), <em>Catch Me If You Can</em> (2002), and <em>The Fabelmans</em> (2022). <em>The Fabelmans</em> especially reflects a deep respect for Freudian tropes, such as the Oedipus complex<marginalia data-type="pa">(<a href="./full/mp4s/05_clip1_compressed.mp4" class="track-link" data-id="page64">clip</a>)</marginalia> and castration anxiety<marginalia data-type="pa">(<a href="./full/mp4s/06_clip2_compressed.mp4" class="track-link" data-id="page65"> clip</a>)</marginalia>.
+Speaking of <em>Catch Me If You Can</em> in 2002, Spielberg said, "it takes, sometimes, something very Freudian to get me to say, "Well, this is interesting; I better read beyond page 50."<marginalia data-type="ci"> (qtd. in McBride, 498; see also <a href="https://openlibrary.org/books/OL24747428M/The_Jaws_log" class="track-link" data-id="page66"><em>The Jaws Log</em></a> Ch. 10, albeit in jest)</marginalia></p>
 <p></p>
-
-<p>Spielberg frequently refers to movies, generally, as “dreams,” and to his own processes as unreflective.</p>
+<p>Spielberg frequently refers to movies, generally, as "dreams," and to his own processes as unreflective.</p>
 <div class = "blockquote">
-<p>If you ask Spielberg where his ideas come from, he pleads ignorance. 
-
-    “Those images aren’t coming from any place in my head,” he says. “I guess it’s just something that happens. I can’t explain it, and I would be fooling everybody to say that I have a lot of self-control over what I do. Basically, I don’t. I don’t have a lot of experience in really talking and really dealing with my life in an analytical way. I just kind of live it. A true artist works from someplace inside himself that he is not capable of confronting when he’s having breakfast. When I’m having breakfast, I read the cereal box. I read the top, the sides, the front, the back, and the bottom, just like I did when I was a kid.” <marginalia data-type="ci">(<a href="https://www.newyorker.com/magazine/1994/03/21/steven-spielberg-profile-schindlers-list" class="track-link" data-id="page67">Seriously Steven Spielberg</a>, <em>The New Yorker</em>, 1994)</marginalia></p>
+<p>If you ask Spielberg where his ideas come from, he pleads ignorance.
+    "Those images aren't coming from any place in my head," he says. "I guess it's just something that happens. I can't explain it, and I would be fooling everybody to say that I have a lot of self-control over what I do. Basically, I don't. I don't have a lot of experience in really talking and really dealing with my life in an analytical way. I just kind of live it. A true artist works from someplace inside himself that he is not capable of confronting when he's having breakfast. When I'm having breakfast, I read the cereal box. I read the top, the sides, the front, the back, and the bottom, just like I did when I was a kid." <marginalia data-type="ci">(<a href="https://www.newyorker.com/magazine/1994/03/21/steven-spielberg-profile-schindlers-list" class="track-link" data-id="page67">Seriously Steven Spielberg</a>, <em>The New Yorker</em>, 1994)</marginalia></p>
 </div>
-
-<p>More recently, he’s been comparing his movies to therapy. In Susan Lacy’s authorized HBO documentary, <em>Spielberg</em> (2017), the director says, “I’ve never needed therapy, because movies are my therapy.”</p>
-
-<p>During the press tour for <em>The Fabelmans</em>, he told an anecdote of his time with his father’s Freudian analyst back in 1965, after a challenging senior year of high school, while his parents were getting a divorce.</p>
-
+<p>More recently, he's been comparing his movies to therapy. In Susan Lacy's authorized HBO documentary, <em>Spielberg</em> (2017), the director says, "I've never needed therapy, because movies are my therapy."</p>
+<p>During the press tour for <em>The Fabelmans</em>, he told an anecdote of his time with his father's Freudian analyst back in 1965, after a challenging senior year of high school, while his parents were getting a divorce.</p>
 <div class = "blockquote">
-
-<p>And I haven’t ever... I’ve never been to a therapist in, in the sense of...—I saw one therapist. I tried to get out of Vietnam, so I went to my dad’s therapist for about two months, thinking he’d write me a letter saying that I was crazy and I was going to have a psychotic break and couldn’t go. But when it came time for me to pop the question and say, can you write me a letter, he really supported the war and would not write me the letter, so I stopped therapy. I stopped Freudian analysis right there on the spot. This is like a $40 million therapy session, this movie, making this thing.</p>
-
+<p>And I haven't ever... I've never been to a therapist in, in the sense of...—I saw one therapist. I tried to get out of Vietnam, so I went to my dad's therapist for about two months, thinking he'd write me a letter saying that I was crazy and I was going to have a psychotic break and couldn't go. But when it came time for me to pop the question and say, can you write me a letter, he really supported the war and would not write me the letter, so I stopped therapy. I stopped Freudian analysis right there on the spot. This is like a $40 million therapy session, this movie, making this thing.</p>
 </div>
-
 <p>But in a <a href="https://www.rollingstone.com/tv-movies/tv-movie-features/science-fiction-in-steven-spielbergs-suburbia-44190/" class="track-link" data-id="page68">1978 <em>Rolling Stone</em> interview</a>, Spielberg went into more detail about the sessions, suggesting that they might have had more of an effect on his psyche than he acknowledges.</p>
-
 <div class = "blockquote">
-<p>I really didn’t have a problem that I could articulate... I didn’t have a central dilemma that I was trying to get the psychiatrist to help me with… So I would just talk. And I felt at times that the psychiatrist disapproved of the long lapses in conversation, because he would sit there smoking his pipe and I’d sit there with nothing to say. So I remember feeling—even though I was the one paying the $50/hour—that I should entertain him. So I would go in, once a week, and for those fifty-five minutes make up stories. And sometimes the stream of consciousness, on the chair in his office, gave me great movie ideas. I would test all these scenarios on him. If he put down his pipe, or if he looked at me and began nodding his head, I’d realize I’d be getting to him. I determined after six months of this that he was human like the rest of us, and he was responding to exciting tales, or he was getting bored at the slow parts. And I was able, during those sessions, to go home and write some of the ideas down. And I got a feeling that, in all my movies, there’s something that came out of those extemporaneous bullshit sessions.</p></div>
-
-<p>As well, what Spielberg downplays as “extemporaneous bullshit sessions” sounds a lot like the Freudian practice of “free association,” which closely matches the way Spielberg’s collaborators say their work usually goes together: he talks, they listen.</p>
-
+<p>I really didn't have a problem that I could articulate... I didn't have a central dilemma that I was trying to get the psychiatrist to help me with… So I would just talk. And I felt at times that the psychiatrist disapproved of the long lapses in conversation, because he would sit there smoking his pipe and I'd sit there with nothing to say. So I remember feeling—even though I was the one paying the $50/hour—that I should entertain him. So I would go in, once a week, and for those fifty-five minutes make up stories. And sometimes the stream of consciousness, on the chair in his office, gave me great movie ideas. I would test all these scenarios on him. If he put down his pipe, or if he looked at me and began nodding his head, I'd realize I'd be getting to him. I determined after six months of this that he was human like the rest of us, and he was responding to exciting tales, or he was getting bored at the slow parts. And I was able, during those sessions, to go home and write some of the ideas down. And I got a feeling that, in all my movies, there's something that came out of those extemporaneous bullshit sessions.</p></div>
+<p>As well, what Spielberg downplays as "extemporaneous bullshit sessions" sounds a lot like the Freudian practice of "free association," which closely matches the way Spielberg's collaborators say their work usually goes together: he talks, they listen.</p>
 <p>Michael Crichton (<a href="https://jurassictime.wixsite.com/memoirs/michael-crichtons-jurassic-park" class="track-link" data-id="page69">the 1st screenwriter of <em>JP</em></a>), had expected that when they first met to discuss the screenplay, they would talk about dinosaurs. Instead recalled Crichton:</p>
-
 <div class = "blockquote">
 <p>as I scribbled hastily, he went through every character in the story, outlining their physical appearances, their motivations, their hopes and fears, their quirks and foibles. Ideas about dialogue, gestures, and costuming tumbled out. Speaking very rapidly, he went on like this for an hour. <marginalia data-type="ci">(qtd. in McBride)</marginalia></p>
 </div>
-
 <p>Carter (Production Designer, and <a href="https://jurassictime.wixsite.com/memoirs/rick-carters-jurassic-park" class="track-link" data-id="page70">2nd screenwriter of <em>JP</em></a>):</p>
 <div class = "blockquote">
 <p>On most shows, the production designer is brought in and handed a script and asked to visualize it. Not so on this one. I was in on many early meetings with Steven where we would break down the scenes in the book and discuss which ones would work best for the film.</p>
 </div>
-
 <p>Marmo (3rd screenwriter of <em>JP</em>):</p>
 <div class = "blockquote">
-<p>Usually writers get an assignment, go home, write it, and turn it in. We didn’t work that way. I had feedback from Steven all the time. In fact, I would send him my first fifteen pages and he would react to them. Then I’d rewrite them a little in accordance with his wishes and send them back with the next fifteen pages, so he would have thirty. And that was pretty much the process for the whole five-month period.</p>
+<p>Usually writers get an assignment, go home, write it, and turn it in. We didn't work that way. I had feedback from Steven all the time. In fact, I would send him my first fifteen pages and he would react to them. Then I'd rewrite them a little in accordance with his wishes and send them back with the next fifteen pages, so he would have thirty. And that was pretty much the process for the whole five-month period.</p>
 </div>
-
 <p>Koepp (4th screenwriter of <em>JP</em>):</p>
 <div class = "blockquote">
 <p> I had a collaborator who was absolutely gushing with ideas. It was more a case of me managing the firehose of good ideas that were directed at me.</p>
 </div>
-
 <p>Jim V. Hart, the original screenwriter for <em>Hook</em>: <div class ="blockquote"><p>Steven tends to use writers like paintbrushes. He wants this writer for this, this writer for that.</p></div>
-
 <p><a href="https://archive.org/details/in.ernet.dli.2015.260498/page/n73/mode/2up" class="track-link" data-id="page71">According to Freud</a>, <a href="pages/dossier.html#section-19" class="track-link" data-id="page72">all dreams <marginalia data-type="pa">(and, as a corollary, all artworks)</a></marginalia> are disguised attempts at wish-fulfillment, with the wishful impulse: </p>
-
 <div class = "book-page">
-    <p>often of a very repellent kind, which is foreign to the waking life of the dreamer and is consequently disavowed by him with a surprise of indignation.” Because the “repressed material itself will never occur to the patient, but only something which approximates to it in an allusive way,” the analyst must listen carefully to the stream of associations for unusual patterns.</p>
-
-<p>If the resistance is slight he will be able from the patient’s allusions to infer the unconscious material itself; or if the resistance is stronger he will be able to recognize its character from the associations, as they seem to become more remote from the subject, and will explain it to the patient.<marginalia> (74)</marginalia></p>
+    <p>often of a very repellent kind, which is foreign to the waking life of the dreamer and is consequently disavowed by him with a surprise of indignation." Because the "repressed material itself will never occur to the patient, but only something which approximates to it in an allusive way," the analyst must listen carefully to the stream of associations for unusual patterns.</p>
+<p>If the resistance is slight he will be able from the patient's allusions to infer the unconscious material itself; or if the resistance is stronger he will be able to recognize its character from the associations, as they seem to become more remote from the subject, and will explain it to the patient.<marginalia> (74)</marginalia></p>
 </div>
-
-<p>The analyst, by using this method, isolates the patient’s chief avoidance tactic and brings the patient to a meaningful decision point.</p>
-
+<p>The analyst, by using this method, isolates the patient's chief avoidance tactic and brings the patient to a meaningful decision point.</p>
 <div class = "book-page">
 <p>It is perfectly true that psycho-analysis, like other psycho-therapeutic methods, employs the instrument of suggestion (or transference). But the difference is this: that in analysis it is not allowed to play the decisive part in determining the therapeutic results. It is used instead to induce the patient to perform a piece of mental work — the overcoming of his transference-resistances — which involves a permanent alteration in his mental economy. The transference is made conscious to the patient by the analyst, and it is resolved by convincing him that in his transference-attitude he is re-experiencing emotional relations which had their origin in his earliest object attachments during the repressed period of his childhood. In this way the transference is changed from the strongest weapon of the resistance into the best instrument of the analytic treatment. Nevertheless its handling remains the most difficult as well as the most important part of the technique of analysis.</p>
 </div>
-
-<p>Freud argued that the same could be said of works of art, which “were calculated to arouse interest in other people and were able to evoke and to gratify the same unconscious wishes in them too.”</p>
-
+<p>Freud argued that the same could be said of works of art, which "were calculated to arouse interest in other people and were able to evoke and to gratify the same unconscious wishes in them too."</p>
 <p>In the end, however, Freud seems to say that there can be no algorithmic solution to the problem of the psyche—it always conceals itself according to its own state-of-the-art methods:</p>
-
-<div class = "book-page"><p>It is left to the patient in all essentials to determine the course of the analysis and the arrangement of the material; any systematic handling of particular symptoms or complexes thus becomes impossible. In complete contrast to what happened with hypnotism and with the urging method<marginalia data-type="pa"> [Freud’s earlier methods of treating neuroses]</marginalia>, interrelated material makes its appearance at different times and at different points in the treatment. To a spectator, therefore—though in fact there can be none—an analytic treatment would seem completely obscure.</p></div>
-
+<div class = "book-page"><p>It is left to the patient in all essentials to determine the course of the analysis and the arrangement of the material; any systematic handling of particular symptoms or complexes thus becomes impossible. In complete contrast to what happened with hypnotism and with the urging method<marginalia data-type="pa"> [Freud's earlier methods of treating neuroses]</marginalia>, interrelated material makes its appearance at different times and at different points in the treatment. To a spectator, therefore—though in fact there can be none—an analytic treatment would seem completely obscure.</p></div>
 <div class="image-grid">
     <figure>
         <img src="./full/gifs/d18.gif" loading="lazy">
     </figure>
-
     <figure>
         <img src="./full/gifs/gif97.gif" loading="lazy">
         <figcaption>Jurassic World (2015)</figcaption>
     </figure>
   </div>
-
-<p>By the time Koepp took over <em>Jurassic Park</em> screenwriting duties in March 1992, <em>Jurassic Park</em> was taking on a self-reflective sheen. In the wake of the producers’ <a href="pages/dossier.html#section-17" class="track-link" data-id="page73">awesome encounter with CGI in early 1992</a>, the sequence of scenes was rearranged to re-enact a similar experience for the spectator, who would themselves be <a href=".full/mp4s/07_meta-implications_compressed.mp4" class="track-link" data-id="page74">witnessing the wonders of seamlessly-integrated CGI</a> for the first time, while also being in a movie theatre, theme park ride, powered by a computer lab, etc. Film theorist Constance Balides points out that <em>Jurassic Park</em>’s reflexive focus on technology and its own marketing potential isn’t concealed but rather “hypervisible.”<marginalia data-type="ci"> (qtd. in <a href="https://archive.org/details/cinemaofstevensp0000morr" class="track-link" data-id="page75">Morris</a>)</marginalia></p>
-
+<p>By the time Koepp took over <em>Jurassic Park</em> screenwriting duties in March 1992, <em>Jurassic Park</em> was taking on a self-reflective sheen. In the wake of the producers' <a href="pages/dossier.html#section-17" class="track-link" data-id="page73">awesome encounter with CGI in early 1992</a>, the sequence of scenes was rearranged to re-enact a similar experience for the spectator, who would themselves be <a href=".full/mp4s/07_meta-implications_compressed.mp4" class="track-link" data-id="page74">witnessing the wonders of seamlessly-integrated CGI</a> for the first time, while also being in a movie theatre, theme park ride, powered by a computer lab, etc. Film theorist Constance Balides points out that <em>Jurassic Park</em>'s reflexive focus on technology and its own marketing potential isn't concealed but rather "hypervisible."<marginalia data-type="ci"> (qtd. in <a href="https://archive.org/details/cinemaofstevensp0000morr" class="track-link" data-id="page75">Morris</a>)</marginalia></p>
 <div class = "blockquote">
-<p><a href="./full/mp4s/07_meta-implications_compressed.mp4" class="track-link" data-id="page76">... When we worked on this we were conscious of the irony that we were making a movie about greedy theme-park people for greedy theme-park people. We thought that was kind of funny. There’s a shot in the movie that lingers over <a href="./full/mp4s/08_marketingreel1_compressed.mp4" class="track-link" data-id="page 88"
->pajamas</a>, or a <a href="./full/mp4s/09_marketingreel2_compressed.mp4" class="track-link" data-id="page77">lunch box</a>, or whatever it is, so we’re trying to acknowledge that there’s some irony in that and some meta-implications.</a></p>
+<p><a href="./full/mp4s/07_meta-implications_compressed.mp4" class="track-link" data-id="page76">... When we worked on this we were conscious of the irony that we were making a movie about greedy theme-park people for greedy theme-park people. We thought that was kind of funny. There's a shot in the movie that lingers over <a href="./full/mp4s/08_marketingreel1_compressed.mp4" class="track-link" data-id="page 88"
+>pajamas</a>, or a <a href="./full/mp4s/09_marketingreel2_compressed.mp4" class="track-link" data-id="page77">lunch box</a>, or whatever it is, so we're trying to acknowledge that there's some irony in that and some meta-implications.</a></p>
 </div>
-
 <div class="image-grid">
-
   <figure class="fade-once-toggle">
     <input type="checkbox" id="toggle-image-1">
     <label for="toggle-image-1">
@@ -851,45 +658,36 @@ Speaking of <em>Catch Me If You Can</em> in 2002, Spielberg said, “it takes, s
       <img src="./full/pics/27.jpg" class="img-2" alt="After" loading="lazy">
     </label>
   </figure>
-
 <figure class="wraparound-carousel">
   <input type="radio" name="wrap-carousel" id="wrap1" checked>
   <input type="radio" name="wrap-carousel" id="wrap2">
   <input type="radio" name="wrap-carousel" id="wrap3">
   <input type="radio" name="wrap-carousel" id="wrap4">
-
   <label for="wrap2" class="wrap-slide slide1">
     <img src="./full/pics/28.jpg" alt="Wrap 1" loading="lazy">
-    <figcaption>McDonald’s cup, based on early production illustrations (1 of 4)</figcaption>
+    <figcaption>McDonald's cup, based on early production illustrations (1 of 4)</figcaption>
   </label>
-
   <label for="wrap3" class="wrap-slide slide2">
     <img src="./full/pics/29.jpg" alt="Wrap 2" loading="lazy">
-    <figcaption>McDonald’s cup, based on early production illustrations (2 of 4)</figcaption>
+    <figcaption>McDonald's cup, based on early production illustrations (2 of 4)</figcaption>
   </label>
-
   <label for="wrap4" class="wrap-slide slide3">
     <img src="./full/pics/30.jpg" alt="Wrap 3" loading="lazy">
-    <figcaption>McDonald’s cup, based on early production illustrations (3 of 4)</figcaption>
+    <figcaption>McDonald's cup, based on early production illustrations (3 of 4)</figcaption>
   </label>
-
   <label for="wrap1" class="wrap-slide slide4">
     <img src="./full/pics/31.jpg" alt="Wrap 4" loading="lazy">
-    <figcaption>McDonald’s cup, based on early production illustrations (4 of 4)</figcaption>
+    <figcaption>McDonald's cup, based on early production illustrations (4 of 4)</figcaption>
   </label>
 </figure>
-
 </div>
-
 <div class = "blockquote">
-<p>...It was funny, but it was getting into a pretty weird area. Here I was writing about these greedy people who are creating a fabulous theme park just so they can exploit all these dinosaurs and make silly films and sell stupid plastic plates and things. And I’m writing it for a company that’s eventually going to put this in their theme parks and make silly little films and sell stupid plastic plates. I was really chasing my tail there for a while trying to figure out who was virtuous in the whole scenario—and eventually gave up. <marginalia data-type="ci">(qtd. in <a href="https://archive.org/details/makingofjurassic00shay" class="track-link" data-id="page78">Duncan and Shay</a>, 56)</marginalia></p>
+<p>...It was funny, but it was getting into a pretty weird area. Here I was writing about these greedy people who are creating a fabulous theme park just so they can exploit all these dinosaurs and make silly films and sell stupid plastic plates and things. And I'm writing it for a company that's eventually going to put this in their theme parks and make silly little films and sell stupid plastic plates. I was really chasing my tail there for a while trying to figure out who was virtuous in the whole scenario—and eventually gave up. <marginalia data-type="ci">(qtd. in <a href="https://archive.org/details/makingofjurassic00shay" class="track-link" data-id="page78">Duncan and Shay</a>, 56)</marginalia></p>
 </div>
-<p>The critique was obviously somewhat tongue-in-cheek. Spielberg’s <em>Jaws</em> (1975), along with George Lucas’s <em>Star Wars</em> (1977), are closely associated with the rise of the Hollywood blockbuster—an overlapping <a href="./full/mp4s/10_filmschool_compressed.mp4" class="track-link" data-id="page79">revolution in storytelling and marketing</a>. Blockbusters reshaped the New Hollywood countercultural sensibility into a more affirmative “hero’s return” structure, inspired by Joseph Campbell’s theory of the “monomyth,” a universal narrative pattern purportedly underlying all stories, building on the speculative philosophy of Carl Jung, Freud’s more optimistic successor.</p>
-
+<p>The critique was obviously somewhat tongue-in-cheek. Spielberg's <em>Jaws</em> (1975), along with George Lucas's <em>Star Wars</em> (1977), are closely associated with the rise of the Hollywood blockbuster—an overlapping <a href="./full/mp4s/10_filmschool_compressed.mp4" class="track-link" data-id="page79">revolution in storytelling and marketing</a>. Blockbusters reshaped the New Hollywood countercultural sensibility into a more affirmative "hero's return" structure, inspired by Joseph Campbell's theory of the "monomyth," a universal narrative pattern purportedly underlying all stories, building on the speculative philosophy of Carl Jung, Freud's more optimistic successor.</p>
 <p><a href="./full/mp4s/12_kael_compressed.mp4" class="track-link" data-id="page80">Pauline Kael</a>, who had been <a href="pages/dossier.html#section-20" class="track-link" data-id="page81">musing on the problem for years</a>, finally passed judgement after <em>Raiders</em>:</p><div class = "blockquote">
-<p>The marketing executives are the new high priests of the movie business.<marginalia data-type="ci"> [...]</marginalia> It’s a shocker when the big-time directors provide a rationale for the marketing division—when they say, as Spielberg does, that “the real movie-lovers are still children.” And there’s no doubt he means that in a congratulatory sense. The whole collapsing industry is being inspired by old Saturday-afternoon serials[...] It’s not surprising that he takes pride in the fine toys that Star Wars generated, and controls their manufacture carefully; essentially, George Lucas is in the toy business. (June 7th, 1981)</p>
+<p>The marketing executives are the new high priests of the movie business.<marginalia data-type="ci"> [...]</marginalia> It's a shocker when the big-time directors provide a rationale for the marketing division—when they say, as Spielberg does, that "the real movie-lovers are still children." And there's no doubt he means that in a congratulatory sense. The whole collapsing industry is being inspired by old Saturday-afternoon serials[...] It's not surprising that he takes pride in the fine toys that Star Wars generated, and controls their manufacture carefully; essentially, George Lucas is in the toy business. (June 7th, 1981)</p>
 </div>
-
 <div class="image-grid">
   <figure class="magnify-container">
   <div class="magnifier-wrap">
@@ -898,114 +696,82 @@ Speaking of <em>Catch Me If You Can</em> in 2002, Spielberg said, “it takes, s
   <figcaption>Camera (A) Close-up (hover to inspect)</figcaption>
 </figure>
     <figure>
-        <img src="./full/pics/33.jpg" loading="lazy">  
-       <figcaption>Camera (B) Wide/Master</figcaption>    
+        <img src="./full/pics/33.jpg" loading="lazy">
+       <figcaption>Camera (B) Wide/Master</figcaption>
     </figure>
     <figure>
-        <img src="./full/pics/34.jpg" loading="lazy">      
+        <img src="./full/pics/34.jpg" loading="lazy">
         <figcaption>Camera (A) Close-up</figcaption>
     </figure>
 </div>
-
 <p>She eventually produced her iconic critique:</p>
-
 <div class = "blockquote">
-<p>Why are movies so bad? One hates to say it comes down to the success of Steven Spielberg, but... It’s not so much what Spielberg has done as what he has encouraged. Everyone else has imitated his fantasies, and the result is an infantilization of the culture. (1985)</p>
+<p>Why are movies so bad? One hates to say it comes down to the success of Steven Spielberg, but... It's not so much what Spielberg has done as what he has encouraged. Everyone else has imitated his fantasies, and the result is an infantilization of the culture. (1985)</p>
 </div>
-
-<p>It’s an angle that’s persisted to the present day, for example, in Martin Scorsese’s <a href="./full/mp4s/13_scorsese_compressed.mp4" class="track-link" data-id="page82">critique of superhero films</a>:</p>
-
+<p>It's an angle that's persisted to the present day, for example, in Martin Scorsese's <a href="./full/mp4s/13_scorsese_compressed.mp4" class="track-link" data-id="page82">critique of superhero films</a>:</p>
 <div class = "blockquote">
-<p>Superhero films, as I said, are like another art form. They’re not easy to make, and there are a lot of very talented people doing good work, and a lot of young people really really enjoy them but I do think it’s more of an amusement-park, or extension of the amusement park, because I saw this happening in the early ‘70s in Hollywood where heads of studios were talking about really wanting to have in the industry a Disney World basically, and Universal was the first to do it—Universal Studio tours—so they’ve always been aiming in that direction, and it comes together, then you can tour the studio, it’s like a theme park ride, but why not put a film in there? Why not make the film part of that experience.</p>
+<p>Superhero films, as I said, are like another art form. They're not easy to make, and there are a lot of very talented people doing good work, and a lot of young people really really enjoy them but I do think it's more of an amusement-park, or extension of the amusement park, because I saw this happening in the early '70s in Hollywood where heads of studios were talking about really wanting to have in the industry a Disney World basically, and Universal was the first to do it—Universal Studio tours—so they've always been aiming in that direction, and it comes together, then you can tour the studio, it's like a theme park ride, but why not put a film in there? Why not make the film part of that experience.</p>
 </div>
-
-<p>The story’s creative technology is <a href="./full/mp4s/14_lunch_tight.mp4" class="track-link" data-id="page83">critiqued by Dr. Malcolm as an act of hubris</a>, having at some point crossed a tipping point to inevitable but unpredictable cosmic blowback. Later, he frames the T-Rex attack as man’s punishment for “killing” God, alluding to the saying popularized by Western philosophy’s most ferocious moral critic, Nietszche, whom Freud admired as having “a more penetrating knowledge of himself than any other man who ever lived or was likely to live."</p>
-
-<p>Although Grant admits “Malcolm was right,” generally speaking, it’s actually his own specific, more optimistic, conjecture which is validated by the discovery of the emergent clutch of raptor eggs. Malcolm’s prediction, “Life finds a way,” does not necessarily mean that the cosmos will punish us for our transgressions—or must, for us to learn, as Malcolm asserts. It may be enough for us to be guided back to the path, chastened but intact. And so in the end Grant is poised to accept <a href="pages/dossier.html#section-22" class="track-link" data-id="page84">creation</a> as a generally compassionate and redemptive phenomenon, and move on to the next stage of his life—fatherhood—echoing Spielberg’s state of mind prior to the birth of his first son with his first wife, Amy Irving, on June 13th, 1985.</p>
-
+<p>The story's creative technology is <a href="./full/mp4s/14_lunch_tight.mp4" class="track-link" data-id="page83">critiqued by Dr. Malcolm as an act of hubris</a>, having at some point crossed a tipping point to inevitable but unpredictable cosmic blowback. Later, he frames the T-Rex attack as man's punishment for "killing" God, alluding to the saying popularized by Western philosophy's most ferocious moral critic, Nietszche, whom Freud admired as having "a more penetrating knowledge of himself than any other man who ever lived or was likely to live."</p>
+<p>Although Grant admits "Malcolm was right," generally speaking, it's actually his own specific, more optimistic, conjecture which is validated by the discovery of the emergent clutch of raptor eggs. Malcolm's prediction, "Life finds a way," does not necessarily mean that the cosmos will punish us for our transgressions—or must, for us to learn, as Malcolm asserts. It may be enough for us to be guided back to the path, chastened but intact. And so in the end Grant is poised to accept <a href="pages/dossier.html#section-22" class="track-link" data-id="page84">creation</a> as a generally compassionate and redemptive phenomenon, and move on to the next stage of his life—fatherhood—echoing Spielberg's state of mind prior to the birth of his first son with his first wife, Amy Irving, on June 13th, 1985.</p>
 <div class="image-grid">
-
     <figure>
         <img src="./full/pics/35.jpg" loading="lazy">
-        <figcaption>Sometime between September 24, 1984—February 2nd, 1985,<marginalia data-type="pa"> Marshall, Spielberg, and Kennedy returned to</marginalia> Indian Dunes<marginalia> of all places</marginalia> for The Color Purple (1985)<marginalia data-type="pa">, to film a scene barely alluded to in Alice Walker’s original book and not in the script</marginalia>.</figcaption>
+        <figcaption>Sometime between September 24, 1984—February 2nd, 1985,<marginalia data-type="pa"> Marshall, Spielberg, and Kennedy returned to</marginalia> Indian Dunes<marginalia> of all places</marginalia> for The Color Purple (1985)<marginalia data-type="pa">, to film a scene barely alluded to in Alice Walker's original book and not in the script</marginalia>.</figcaption>
     </figure>
-
     <figure>
-        <img src="./full/pics/36.jpg" loading="lazy">      
+        <img src="./full/pics/36.jpg" loading="lazy">
         <figcaption>1985</figcaption>
     </figure>
-
        <figure>
-        <img src="./full/pics/37.jpg" loading="lazy">      
+        <img src="./full/pics/37.jpg" loading="lazy">
         <figcaption>1994</figcaption>
     </figure>
-
 </div>
-
-<p>McBride identifies Spielberg’s movies of the turn of the ‘90s (<em>Last Crusade, Always,</em> and <em>Hook)</em> as representing a period of personal growth and healing:</p>
-
+<p>McBride identifies Spielberg's movies of the turn of the '90s (<em>Last Crusade, Always,</em> and <em>Hook)</em> as representing a period of personal growth and healing:</p>
 <div class = "book-page">
-The depth of Spielberg’s involvement in his characters’ neuroses in these transitional films makes them resemble cinematic Rorschach inkblots. Spielberg went through psychotherapy around 1987, the first time he had done so since adolescence. "All my friends went to therapy and I thought that maybe I would learn something about myself, so I went for a year," he said. "But I can’t say that I found the discoveries conclusive. Everything I learned about myself I knew already or I’d guessed for myself." Shortly after the release of <em>Hook,</em> it was reported that Spielberg had met privately with psychologist John Bradshaw. Bradshaw’s emphasis on dysfunctional families and getting back in touch with one’s "inner child" made him a guru for Hollywood celebrities undergoing midlife crises. Spielberg solicited Bradshaw’s advice on the script of <em>Hook;</em> he also had the psychologist on the set for part of the shooting, and cast Bradshaw’s daughter in the film. <marginalia data-type="ci">(400)</marginalia>
+The depth of Spielberg's involvement in his characters' neuroses in these transitional films makes them resemble cinematic Rorschach inkblots. Spielberg went through psychotherapy around 1987, the first time he had done so since adolescence. "All my friends went to therapy and I thought that maybe I would learn something about myself, so I went for a year," he said. "But I can't say that I found the discoveries conclusive. Everything I learned about myself I knew already or I'd guessed for myself." Shortly after the release of <em>Hook,</em> it was reported that Spielberg had met privately with psychologist John Bradshaw. Bradshaw's emphasis on dysfunctional families and getting back in touch with one's "inner child" made him a guru for Hollywood celebrities undergoing midlife crises. Spielberg solicited Bradshaw's advice on the script of <em>Hook;</em> he also had the psychologist on the set for part of the shooting, and cast Bradshaw's daughter in the film. <marginalia data-type="ci">(400)</marginalia>
 </div>
-
-<p>According to <a href="https://www.youtube.com/watch?v=YiYXEhzBpME" class="track-link" data-id="page85">Bradshaw</a>, Spielberg was deeply impressed by his work. <i>Los Angeles</i> magazine <a href="https://www.johnbradshaw.com/blog/2018/10/5/oh-pablum-why-hollywoods-latest-guru-john-bradshaw-is-turning-everyone-from-spielberg-to-streisand-into-crybabies-published-in-los-angeles-magazine" class="track-link" data-id="page86">reported</a> that in February of 1992, they met at Spielberg’s house to discuss a TV show based on his work. Bradshaw says Spielberg looked at him on the set of <em>Hook</em> and said, “This could be the most powerful television program of all time.”<br><p>
-
-Spielberg married his second wife, Kate Capshaw, on October 12th, 1991. The Spielberg-Capshaw family eventually included seven children, a mix of biological and adopted: Max (from Spielberg’s previous marriage), Theo (whom Capshaw had adopted prior to their marriage and whom Spielberg later adopted), Sasha, Sawyer, Mikaela (also adopted), Destry, and Jessica Capshaw from Kate’s previous marriage. Capshaw converted to Judaism before the marriage; Spielberg studied along with her, later reflecting that he had "learned more in one year than I had learned all through formal Jewish training.”<marginalia data-type="ci"> (McBride 57)</marginalia> Including, one would expect, the principles of תשובה (<i>teshuvah</i>), i.e., that forgiveness is sought directly from the wronged party, rather than resolved privately between oneself and G_d.</p>
-
-<p>Finally, at the 1994 Oscars, Spielberg received the prize that had eluded him first for <em>Jaws</em> (1975), and then for <em>E.T.: The Extra-Terrestrial</em> (1982), Hollywood’s most coveted prize: the Oscar for Best Director.</p>
-
-<div class = "blockquote"><p>I have friends who have won this before. But—and I swear...—I have never held one before. This is the first time I’ve ever had one of these in my hand.</p></div>
-
-<p>Later on, after the film also picked up a second, for Best Picture, he quipped, “this is the best drink of water after the longest drought in my life.”</p>
-
+<p>According to <a href="https://www.youtube.com/watch?v=YiYXEhzBpME" class="track-link" data-id="page85">Bradshaw</a>, Spielberg was deeply impressed by his work. <i>Los Angeles</i> magazine <a href="https://www.johnbradshaw.com/blog/2018/10/5/oh-pablum-why-hollywoods-latest-guru-john-bradshaw-is-turning-everyone-from-spielberg-to-streisand-into-crybabies-published-in-los-angeles-magazine" class="track-link" data-id="page86">reported</a> that in February of 1992, they met at Spielberg's house to discuss a TV show based on his work. Bradshaw says Spielberg looked at him on the set of <em>Hook</em> and said, "This could be the most powerful television program of all time."<br><p>
+Spielberg married his second wife, Kate Capshaw, on October 12th, 1991. The Spielberg-Capshaw family eventually included seven children, a mix of biological and adopted: Max (from Spielberg's previous marriage), Theo (whom Capshaw had adopted prior to their marriage and whom Spielberg later adopted), Sasha, Sawyer, Mikaela (also adopted), Destry, and Jessica Capshaw from Kate's previous marriage. Capshaw converted to Judaism before the marriage; Spielberg studied along with her, later reflecting that he had "learned more in one year than I had learned all through formal Jewish training."<marginalia data-type="ci"> (McBride 57)</marginalia> Including, one would expect, the principles of תשובה (<i>teshuvah</i>), i.e., that forgiveness is sought directly from the wronged party, rather than resolved privately between oneself and G_d.</p>
+<p>Finally, at the 1994 Oscars, Spielberg received the prize that had eluded him first for <em>Jaws</em> (1975), and then for <em>E.T.: The Extra-Terrestrial</em> (1982), Hollywood's most coveted prize: the Oscar for Best Director.</p>
+<div class = "blockquote"><p>I have friends who have won this before. But—and I swear...—I have never held one before. This is the first time I've ever had one of these in my hand.</p></div>
+<p>Later on, after the film also picked up a second, for Best Picture, he quipped, "this is the best drink of water after the longest drought in my life."</p>
 <p>He also would go on to rise to the challenge of the next stage of his life, becoming himself a studio mogul, as one of the three founding members of Dreamworks SKG. Kennedy would go on to become the President of LucasFilm, Ltd. (in 2012, <a href="https://www.youtube.com/watch?v=OMXOg-APbGc" class="track-link" data-id="page87">when the IP was purchased by Disney</a>), and Marshall most recently worked as Producer on <em>Jurassic World: Rebirth</em> (2025, upcoming).</p>
-
-<p>In media theorist Carolyn Kane’s <em>Chromatic Algorithms</em> (2015), she characterizes the narrative form as “Hollywood’s commodity par excellence.” Through the application of Joseph Campbell’s mythological theory, the narrative form has supposedly been reduced to its essential structure.</p>
-<p>In <a href="https://www.michaelcrichton.com/works/jurassic-park/" class="track-link" data-id="page88">Crichton’s novel</a>, in the original ending, Hammond falls into a narcotic stupor before he is eaten alive by small dinosaurs (“compys”).</p>
-
+<p>In media theorist Carolyn Kane's <em>Chromatic Algorithms</em> (2015), she characterizes the narrative form as "Hollywood's commodity par excellence." Through the application of Joseph Campbell's mythological theory, the narrative form has supposedly been reduced to its essential structure.</p>
+<p>In <a href="https://www.michaelcrichton.com/works/jurassic-park/" class="track-link" data-id="page88">Crichton's novel</a>, in the original ending, Hammond falls into a narcotic stupor before he is eaten alive by small dinosaurs ("compys").</p>
 <div class = "book-page">
 Lying on his back on the hillside, he began to feel strangely relaxed, detached from himself. But he realized that nothing was wrong. No error had been made. Malcolm was quite incorrect in his analysis. Hammond lay very still, as still as a child in its crib, and he felt wonderfully peaceful. When the next compy came up and bit his ankle, he made only a halfhearted effort to kick it away. The little animals edged closer. Soon they were chattering all around him, like excited birds. He raised his head as another compy jumped onto his chest, the animal surprisingly light and delicate. Hammond felt only a slight pain, very slight, as the compy bent to chew his neck.
 </div>
-
-<p>Who determines the terms of forgiveness for the powerful? <!--What’s an honest critic to say?--></p>
+<p>Who determines the terms of forgiveness for the powerful? <!--What's an honest critic to say?--></p>
 <p>The problem is that when rescue narratives are used as a shield for <span class="underlined">war crimes</span>, they degrade their own moral currency, upon which so many hopes depend.</p>
-
 <p></p>
 <p>Dedicated to M&R.</p>
 <p>WJC<br>MPhil KU Leuven Philosophy (Ancient) 2016<br>🇨🇦</p>
-
 <p>"To attain any assured knowledge about the soul is one of the most difficult things in the world." (Aristotle, <a href="https://psychclassics.yorku.ca/Aristotle/De-anima/de-anima1.htm" class="track-link" data-id="page89"><em>De Anima</em> 1:1</a>)</p>
 </div>
-
 </main>
-</div>
-
   <!-- Background Audio Tracks -->
-<audio id="bg-audio" muted>
+<audio id="bg-audio" muted preload="none">
   <source src="full/mp3s/02.wav" type="audio/wav">
 </audio>
-
-<audio id="bg-audio-unlock20" muted>
+<audio id="bg-audio-unlock20" muted preload="none">
   <source src="full/mp3s/03.wav" type="audio/wav">
 </audio>
- 
-<audio id="bg-music" loop muted>
+
+<audio id="bg-music" loop muted preload="none">
   <source src="full/mp3s/25.01.31.91.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-
-<audio id="bg-music-unlock5" loop muted>
+<audio id="bg-music-unlock5" loop muted preload="none">
   <source src="full/mp3s/25.02.17.130.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-
-<audio id="bg-music-unlock10" loop muted>
+<audio id="bg-music-unlock10" loop muted preload="none">
   <source src="full/mp3s/25.11.13.98.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-
 <!--audio id="score-chime" src="../full/mp3s/chime.wav" preload="auto"></audio-->
-
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   // === 1. MUSIC TRACKS ===
@@ -1014,18 +780,15 @@ document.addEventListener('DOMContentLoaded', () => {
     2: document.getElementById('bg-music-unlock5'),
     3: document.getElementById('bg-music-unlock10')
   };
-
   // === 2. AMBIENT TRACKS ===
   const ambientDefault = document.getElementById('bg-audio');
   const ambientAlt = document.getElementById('bg-audio-unlock20');
-
   // === 3. STORAGE HELPERS ===
   const getState = () => parseInt(localStorage.getItem('musicState')) || 0;
   const setState = s => localStorage.setItem('musicState', s);
   const getVisited = () => JSON.parse(localStorage.getItem('visitedLinks') || '[]');
   const getUnlocked = () => JSON.parse(localStorage.getItem('unlockedMusic') || '[]');
   const setUnlocked = arr => localStorage.setItem('unlockedMusic', JSON.stringify(arr));
-
   // === 4. TOAST ===
   function showToast(level) {
     const toast = document.createElement('div');
@@ -1034,7 +797,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(toast);
     setTimeout(() => toast.remove(), 3000);
   }
-
   // === 5. MUSIC FUNCTIONS ===
   function stopAllMusic() {
     Object.values(tracks).forEach(a => {
@@ -1045,7 +807,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
   function playMusic(state) {
     stopAllMusic();
     const a = tracks[state];
@@ -1054,12 +815,10 @@ document.addEventListener('DOMContentLoaded', () => {
       a.play().catch(err => console.warn('Music play error:', err));
     }
   }
-
   function cycleMusic() {
     const visited = getVisited();
     const unlockedFlags = getUnlocked();
     const score = visited.length;
-
     if (score >= 5 && !unlockedFlags.includes(5)) {
       unlockedFlags.push(5);
       setUnlocked(unlockedFlags);
@@ -1075,12 +834,10 @@ document.addEventListener('DOMContentLoaded', () => {
       setUnlocked(unlockedFlags);
       showToast(20);
     }
-
     const available = [1];
     if (score >= 5) available.push(2);
     if (score >= 10) available.push(3);
     // NO music track at 20; ambient unlock only
-
     const current = getState();
     const currentIndex = available.indexOf(current);
     const next = (currentIndex === -1)
@@ -1088,7 +845,6 @@ document.addEventListener('DOMContentLoaded', () => {
       : (currentIndex === available.length - 1)
         ? 0
         : available[currentIndex + 1];
-
     setState(next);
     if (next === 0) {
       stopAllMusic();
@@ -1096,26 +852,21 @@ document.addEventListener('DOMContentLoaded', () => {
       playMusic(next);
     }
   }
-
   // === 6. AMBIENT AUDIO LOGIC ===
   function playAmbient() {
     const score = getVisited().length;
-
     if (score >= 20 && ambientAlt) {
       ambientDefault.pause();
       ambientDefault.muted = true;
-
       ambientAlt.muted = false;
       ambientAlt.play().catch(() => {});
     } else {
       ambientAlt?.pause();
       ambientAlt.muted = true;
-
       ambientDefault.muted = false;
       ambientDefault.play().catch(() => {});
     }
   }
-
   const audioToggle = document.getElementById('audio-toggle');
   if (audioToggle) {
     audioToggle.addEventListener('change', () => {
@@ -1126,18 +877,15 @@ document.addEventListener('DOMContentLoaded', () => {
         ambientAlt?.pause();
       }
     });
-
     if (audioToggle.checked) {
       playAmbient();
     }
   }
-
   // === 7. HOOK UP MUSIC BUTTON ===
   const musicButton = document.getElementById('music-toggle');
   if (musicButton) {
     musicButton.addEventListener('click', cycleMusic);
   }
-
   // === 8. HERO AUTOPLAY (Low Power Mode fallback) ===
   const hero = document.getElementById('hero-media');
   if (hero) {
@@ -1145,9 +893,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.addEventListener('touchstart', () => hero.play(), { once: true });
     });
   }
-
 });
-
 </script>
 <!--audio id="score-chime" src="./full/mp3s/chime.wav" preload="auto"></audio-->
 </body>

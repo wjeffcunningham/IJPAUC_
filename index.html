@@ -141,9 +141,7 @@ Index</a></div>
   </div> <!-- End of .menu-header -->
   <!-- ✅ HERO -->
 <div id="hero-image-container">
-<video autoplay muted playsinline loop id="hero-media" class="hero-media" width="640" height="480">
-  <source src="./full/gifs/landingdemo.mp4" type="video/mp4">
-</video>
+<img id="hero-media" class="hero-media lazy-gif" width="640" height="480" src="./full/gifs/landingdemo-poster.jpg" data-gif-src="./full/gifs/landingdemo.gif" alt="">
   <div class="hero-image-text">
     IS JURASSIC PARK<br>(1993)<br>AN UNCONSCIOUS CONFESSION?
   </div>
@@ -168,15 +166,11 @@ July 1st, 2025 <!--Ed. July 16th, 2026-->
 </div>
 <div class="image-grid">
     <figure>
-        <video autoplay muted loop playsinline preload="metadata" poster="./full/gifs/01-poster.jpg">
-          <source src="./full/gifs/01.mp4" type="video/mp4">
-        </video>
+        <img class="lazy-gif" loading="lazy" decoding="async" src="./full/gifs/01-poster.jpg" data-gif-src="./full/gifs/01-ezgif.com-optimize.gif" alt="">
        <figcaption>Jurassic Park (1993). Main-Road T-Rex Attack. The final draft describes the T-Rex as being "twenty five feet high."</figcaption>
     </figure>
       <figure>
-        <video autoplay muted loop playsinline preload="metadata" poster="./full/gifs/02-poster.jpg">
-          <source src="./full/gifs/02.mp4" type="video/mp4">
-        </video>
+        <img class="lazy-gif" loading="lazy" decoding="async" src="./full/gifs/02-poster.jpg" data-gif-src="./full/gifs/02-ezgif.com-optimize.gif" alt="">
         <figcaption>Twilight Zone: The Movie, scene 32, July 23rd, 1982. According to the NTSB, the helicopter "hovered about 25 feet above the village."</figcaption>
     </figure>
 </div>
@@ -886,12 +880,31 @@ document.addEventListener('DOMContentLoaded', () => {
   if (musicButton) {
     musicButton.addEventListener('click', cycleMusic);
   }
-  // === 8. HERO AUTOPLAY (Low Power Mode fallback) ===
-  const hero = document.getElementById('hero-media');
-  if (hero) {
-    hero.play().catch(() => {
-      document.addEventListener('touchstart', () => hero.play(), { once: true });
-    });
+  // === 8. LAZY GIF SWAP ===
+  // Each .lazy-gif starts out showing a small static poster image (fast, no
+  // autoplay policy involved). Once the real animated GIF has fully downloaded
+  // in the background, swap it in -- and for anything below the fold, don't
+  // even start that download until the image is about to scroll into view.
+  const lazyGifs = document.querySelectorAll('img.lazy-gif');
+  function swapInGif(img) {
+    const gifSrc = img.dataset.gifSrc;
+    if (!gifSrc) return;
+    const loader = new Image();
+    loader.onload = () => { img.src = gifSrc; };
+    loader.src = gifSrc;
+  }
+  if ('IntersectionObserver' in window) {
+    const gifObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          swapInGif(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '200px' });
+    lazyGifs.forEach(img => gifObserver.observe(img));
+  } else {
+    lazyGifs.forEach(swapInGif);
   }
 });
 </script>

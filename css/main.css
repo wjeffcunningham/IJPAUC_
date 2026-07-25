@@ -1108,7 +1108,7 @@ body.dark-mode .datebook-note::before {
   margin: 0 auto;
   object-fit: cover;
   object-position: top;
-  background: #0a0a0a url("./full/gifs/landingdemo-poster.jpg") top center/cover no-repeat;
+  background: #0a0a0a url("../full/gifs/landingdemo-poster.jpg") top center/cover no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -1932,11 +1932,11 @@ body:has(#toggle-x:checked) marginalia[data-type=x] {
 
 /* Optional: hide invisible-only icon unless in dark mode */
 .dark-only {
-  display: none;
+  visibility: hidden;
 }
 
 body.dark-mode .dark-only {
-  display: inline-block;
+  visibility: visible;
 }
 
 .dossier-dropdown {
@@ -2091,7 +2091,7 @@ body.dark-mode #toggleMode {
 
 #tools-widgets {
   display: none;
-  grid-template-columns: repeat(4, 1fr); /* so 👻 aligns with ☰ */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-items: center;
   margin-top: -0.2rem; /* slight tighten */
 }

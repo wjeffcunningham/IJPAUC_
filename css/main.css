@@ -1548,12 +1548,12 @@ marginalia[data-type=ch] {
   display: none;
 }
 
-#magnify-toggle:checked ~ main marginalia[data-type=pa] {
+body:has(#magnify-toggle:checked) main marginalia[data-type=pa] {
   display: inline;
 }
 
-#magnify-toggle:checked ~ main .ci-glow,
-#magnify-toggle:checked ~ main .ch-glow {
+body:has(#magnify-toggle:checked) main .ci-glow,
+body:has(#magnify-toggle:checked) main .ch-glow {
   box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.5);
   border-radius: 4px;
   padding: 0 2px;
@@ -1561,8 +1561,8 @@ marginalia[data-type=ch] {
   transition: box-shadow 0.3s ease;
 }
 
-#magnify-toggle:checked ~ main .ci-glow:hover + marginalia[data-type=ci],
-#magnify-toggle:checked ~ main .ch-glow:hover + marginalia[data-type=ch] {
+body:has(#magnify-toggle:checked) main .ci-glow:hover + marginalia[data-type=ci],
+body:has(#magnify-toggle:checked) main .ch-glow:hover + marginalia[data-type=ch] {
   display: inline;
 }
 
@@ -1646,7 +1646,8 @@ marginalia[data-type=ch] {
   margin-left: 0.5ch;
   transition: color 0.3s ease, filter 0.3s ease;
 }
-.magnifier-toggle input[type=checkbox]:checked + label {
+
+body:has(#magnify-toggle:checked) .magnifier-toggle label {
   color: #4caf50;
   filter: drop-shadow(0 0 2px #4caf50);
 }

@@ -1652,6 +1652,13 @@ body:has(#magnify-toggle:checked) .magnifier-toggle label {
   filter: drop-shadow(0 0 2px #4caf50);
 }
 
+.meta-icon {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
 .menu-header {
   position: fixed;
   top: 0rem;

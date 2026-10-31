@@ -11,6 +11,9 @@
   <script type="text/javascript" src="./js/tracklinks.js" defer></script>
   <script type="text/javascript" src="./js/darkmode.js" defer></script>
   <meta charset="utf-8">
+  <style>
+    .version-tag { font-size: 0.55em; white-space: nowrap; }
+  </style>
   <meta name="description" content="Is Jurassic Park (1993) an Unconscious Confession?">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preload" href="./full/gifs/landingdemo-poster.jpg" as="image" fetchpriority="high">
@@ -70,6 +73,7 @@
       <!-- Hidden checkboxes for toggling -->
       <input type="checkbox" id="info-toggle" hidden>
       <input type="checkbox" id="tools-toggle" hidden>
+      <input type="checkbox" id="tracker-toggle" hidden>
 <!-- Row 1: main icons -->
 <div class="widgets-row">
   <div class="widgets" id="base-widgets">
@@ -86,8 +90,11 @@
     <input type="checkbox" id="audio-toggle" hidden>
 <label for="audio-toggle" class="audio-icon" title="Toggle Background Audio">🔊</label>
 <button id="music-toggle" class="music-icon" title="Cycle Background Music">🎶</button>
-    <label for="toggle-x" class="dark-only ghost-icon" title="Toggle Invisibles">👻</label>
-    <marginalia data-type="x">v1.2</marginalia>
+    <!-- Radar: records links followed (this device only) while on. -->
+    <label for="tracker-toggle" title="Toggle Radar">📡</label>
+    <label for="toggle-x" class="dark-only version-tag" title="Toggle Invisibles">v1.2</label>
+    <!-- Kept for older scripts that look up the ghost icon; never shown. -->
+    <label for="toggle-x" class="ghost-icon" style="display:none" aria-hidden="true"></label>
   </div>
 </div>
       <div class="grid-cell menu-abstract">
@@ -893,5 +900,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 <!--audio id="score-chime" src="./full/mp3s/chime.wav" preload="auto"></audio-->
+<script>
+// Keep the radar's on/off state in step across pages.
+document.addEventListener('DOMContentLoaded', function () {
+  var el = document.getElementById('tracker-toggle');
+  if (!el) return;
+  var saved = localStorage.getItem('tracker-toggle');
+  if (saved !== null) el.checked = saved === 'true';
+  el.addEventListener('change', function () { localStorage.setItem('tracker-toggle', el.checked); });
+});
+</script>
 </body>
 </html>

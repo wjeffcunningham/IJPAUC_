@@ -71,7 +71,7 @@ persistIds.forEach(id => {
     scoreElement.textContent = `${newCount}/${totalLinks}`;
   }
 
-  if (newCount > previousCount && window.audioReady && chime) {
+  if (newCount > previousCount && window.audioReady && chime && localStorage.getItem('radar-mute') !== 'true') {
     scoreElement.classList.add('pulse');
     setTimeout(() => scoreElement.classList.remove('pulse'), 600);
     chime.currentTime = 0;

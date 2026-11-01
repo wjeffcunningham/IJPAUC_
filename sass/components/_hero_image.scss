@@ -5,6 +5,8 @@
   margin-bottom: 2em;
 }
 
+// No poster="" on the hero video: video[poster] { width: 100% } would
+// override this and blow the hero up to full window width.
 .hero-media {
   width: 768px;
   height: auto;
@@ -23,6 +25,8 @@
 }
 
 .hero-image-text {
+  display: block; // also when it is the page <h1>
+  margin: 0;
   width: 100%;
   position: absolute;
   top: 50%;

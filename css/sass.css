@@ -1117,6 +1117,8 @@ body.dark-mode .datebook-note::before {
   }
 }
 .hero-image-text {
+  display: block;
+  margin: 0;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -2110,6 +2112,7 @@ body.dark-mode #toggleMode {
 }
 
 .ghost-icon {
+  display: none !important;
   grid-column: 4;
 }
 

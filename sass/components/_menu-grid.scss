@@ -456,6 +456,7 @@ body.dark-mode #toggleMode {
 }
 
 .ghost-icon {
+  display: none !important; // kept for older scripts; never shown
   grid-column: 4;
 }
 

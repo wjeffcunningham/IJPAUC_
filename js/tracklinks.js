@@ -1,5 +1,20 @@
+// Link score. Main-page links count 1; dossier links (data-id "dos-…") count 0.01.
+// Totals from the link audit of November 1st, 2026: 98 main-page links, 109 dossier links.
+const LINK_TOTAL_MAIN = 98;
+const LINK_TOTAL_DOSSIER = 109;
+// Shown out of 101: 98 main-page links + 2 points reserved for bonuses (TBA) + 1 for the 109 dossier links.
+// Reachable now: 98 + 1.09 = 99.09. Technical maximum once bonuses exist: 101.09.
+const LINK_SCORE_SHOWN_OUT_OF = 101;
+const linkWeight = id => (String(id).indexOf('dos-') === 0 ? 0.01 : 1);
+const linkFmt = n => (Math.round(n * 100) / 100).toFixed(Number.isInteger(Math.round(n * 100) / 100) ? 0 : 2);
+window.linkScore = function () {
+  let v = [];
+  try { v = JSON.parse(localStorage.getItem('visitedLinks')) || []; } catch (e) {}
+  return Math.round(v.reduce((n, id) => n + (id ? linkWeight(id) : 0), 0) * 100) / 100;
+};
+
 document.addEventListener('DOMContentLoaded', () => {
-  const totalLinks = 101;
+  const totalLinks = LINK_SCORE_SHOWN_OUT_OF;
   const storageKey = 'visitedLinks';
   const scoreElement = document.getElementById('score');
   const audioToggle = document.getElementById('audio-toggle');
@@ -9,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateScore() {
     if (scoreElement) {
-      scoreElement.textContent = `Score: ${visited.length}/${totalLinks}`;
+      scoreElement.textContent = `Score: ${linkFmt(window.linkScore())}/${linkFmt(totalLinks)}`;
     }
   }
 
@@ -21,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const id = link.dataset.id;
       let delay = 50;
 
-      if (!visited.includes(id)) {
+      if (id && !visited.includes(id)) {
         visited.push(id);
         localStorage.setItem(storageKey, JSON.stringify(visited));
         updateScore();

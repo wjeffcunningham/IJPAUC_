@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   <script type="text/javascript" src="./js/menu.js?v=26.10.31" defer></script>
-  <script type="text/javascript" src="./js/tracklinks.js?v=26.10.31" defer></script>
+  <script type="text/javascript" src="./js/tracklinks.js?v=26.11.01b" defer></script>
   <script type="text/javascript" src="./js/darkmode.js" defer></script>
   <meta charset="utf-8">
   <style>
@@ -124,9 +124,6 @@
     <input type="checkbox" id="audio-toggle" hidden>
 <label for="audio-toggle" class="audio-icon" title="Toggle Background Audio">🔊</label>
 <button id="music-toggle" class="music-icon" title="Cycle Background Music">🎶</button>
-    <!-- Radar: records links followed (this device only) while on. -->
-    <label for="tracker-toggle" title="Toggle Radar">📡</label>
-        <input type="checkbox" id="radar-mute" hidden><label for="radar-mute" id="radar-mute-label" class="radar-mute" title="Radar sound on">🔔</label>
     <label for="toggle-x" class="dark-only version-tag" title="Toggle Invisibles">v1.2</label>
     <!-- Kept for older scripts that look up the ghost icon; never shown. -->
     <label for="toggle-x" class="ghost-icon" style="display:none" aria-hidden="true"></label>
@@ -144,40 +141,40 @@ Index</a></div>
         <ol class="menu-links">
           <li></li><li></li><li></li><li></li> <!-- padding -->
 
-          <li><a href="pages/dossier.html#section-01" class="track-link">
+          <li><a href="pages/dossier.html#section-01" class="track-link" data-id="page2">
 1</a></li>
-          <li><a href="pages/dossier.html#section-02" class="track-link">
+          <li><a href="pages/dossier.html#section-02" class="track-link" data-id="page4">
 2</a></li>
-          <li><a href="pages/dossier.html#section-03" class="track-link">
+          <li><a href="pages/dossier.html#section-03" class="track-link" data-id="page5">
 3</a></li>
-          <li><a href="pages/dossier.html#section-04" class="track-link">
+          <li><a href="pages/dossier.html#section-04" class="track-link" data-id="page6">
 4</a></li>
-          <li><a href="pages/dossier.html#section-05" class="track-link">
+          <li><a href="pages/dossier.html#section-05" class="track-link" data-id="page7">
 5</a></li>
-          <li><a href="pages/dossier.html#section-06" class="track-link">
+          <li><a href="pages/dossier.html#section-06" class="track-link" data-id="menu-section-06">
 6</a></li>
-          <li><a href="pages/dossier.html#section-07" class="track-link">
+          <li><a href="pages/dossier.html#section-07" class="track-link" data-id="page13">
 7</a></li>
-          <li><a href="pages/dossier.html#section-08" class="track-link">
+          <li><a href="pages/dossier.html#section-08" class="track-link" data-id="menu-section-08">
 8</a></li>
-          <li><a href="pages/dossier.html#section-09" class="track-link">
+          <li><a href="pages/dossier.html#section-09" class="track-link" data-id="page40">
 9</a></li>
-          <li><a href="pages/dossier.html#section-10" class="track-link">
+          <li><a href="pages/dossier.html#section-10" class="track-link" data-id="page42">
 10</a></li>
-          <li><a href="pages/dossier.html#section-11" class="track-link">
+          <li><a href="pages/dossier.html#section-11" class="track-link" data-id="menu-section-11">
 11</a></li>
-          <li><a href="pages/dossier.html#section-12" class="track-link">12</a></li>
-          <li><a href="pages/dossier.html#section-13" class="track-link">13</a></li>
-          <li><a href="pages/dossier.html#section-14" class="track-link">14</a></li>
-          <li><a href="pages/dossier.html#section-15" class="track-link">15</a></li>
-          <li><a href="pages/dossier.html#section-16" class="track-link">16</a></li>
-          <li><a href="pages/dossier.html#section-17" class="track-link">17</a></li>
-          <li><a href="pages/dossier.html#section-18" class="track-link">18</a></li>
-          <li><a href="pages/dossier.html#section-19" class="track-link">19</a></li>
-          <li><a href="pages/dossier.html#section-20" class="track-link">20</a></li>
-          <li><a href="pages/dossier.html#section-21" class="track-link">21</a></li>
-          <li><a href="pages/dossier.html#section-22" class="track-link">22</a></li>
-          <li><a href="pages/dossier.html#section-notes" class="track-link">23</a></li>
+          <li><a href="pages/dossier.html#section-12" class="track-link" data-id="page44">12</a></li>
+          <li><a href="pages/dossier.html#section-13" class="track-link" data-id="page21">13</a></li>
+          <li><a href="pages/dossier.html#section-14" class="track-link" data-id="page46">14</a></li>
+          <li><a href="pages/dossier.html#section-15" class="track-link" data-id="page52">15</a></li>
+          <li><a href="pages/dossier.html#section-16" class="track-link" data-id="page49">16</a></li>
+          <li><a href="pages/dossier.html#section-17" class="track-link" data-id="page62">17</a></li>
+          <li><a href="pages/dossier.html#section-18" class="track-link" data-id="menu-section-18">18</a></li>
+          <li><a href="pages/dossier.html#section-19" class="track-link" data-id="page72">19</a></li>
+          <li><a href="pages/dossier.html#section-20" class="track-link" data-id="page81">20</a></li>
+          <li><a href="pages/dossier.html#section-21" class="track-link" data-id="menu-section-21">21</a></li>
+          <li><a href="pages/dossier.html#section-22" class="track-link" data-id="page84">22</a></li>
+          <li><a href="pages/dossier.html#section-notes" class="track-link" data-id="menu-section-notes">23</a></li>
         </ol>
       </details>
     </div> <!-- End of .menu-grid -->
@@ -203,9 +200,9 @@ Index</a></div>
       <p><i>In 1982, two illegally hired child “extras” were killed in a stunt accident directed by John Landis on the set of Twilight Zone: The Movie, a Steven Spielberg production. Spielberg’s association is typically remembered as no association at all. But to those who have studied the case closely, the extent of its famous co-producer’s involvement in the design of the fatal sequence and the illegal hiring of the children remains obscure.</i></p>
 
 <div class="meta-line">
-  <a href="https://github.com/wjeffcunningham" class="track-link">WJC</a>
+  <a href="https://github.com/wjeffcunningham" class="track-link" data-id="link-github">WJC</a>
   July 1st, 2025 <!--Ed. July 16th, 2026-->
-  <a href="https://www.youtube.com/@VVIP27" class="track-link">VVIP25</a>
+  <a href="https://www.youtube.com/@VVIP27" class="track-link" data-id="link-youtube">VVIP25</a>
   <div class="magnifier-toggle">
     <input type="checkbox" id="magnify-toggle">
     <label for="magnify-toggle" title="Toggle Magnify Mode"></label>
@@ -833,6 +830,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const getState = () => parseInt(localStorage.getItem('musicState')) || 0;
   const setState = s => localStorage.setItem('musicState', s);
   const getVisited = () => JSON.parse(localStorage.getItem('visitedLinks') || '[]');
+  // weighted link score (main-page links 1, dossier links 0.01), from tracklinks.js
+  const linkPoints = () => (window.linkScore ? window.linkScore() : getVisited().length);
   const getUnlocked = () => JSON.parse(localStorage.getItem('unlockedMusic') || '[]');
   const setUnlocked = arr => localStorage.setItem('unlockedMusic', JSON.stringify(arr));
   // === 4. TOAST ===
@@ -864,7 +863,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function cycleMusic() {
     const visited = getVisited();
     const unlockedFlags = getUnlocked();
-    const score = visited.length;
+    const score = linkPoints();
     if (score >= 5 && !unlockedFlags.includes(5)) {
       unlockedFlags.push(5);
       setUnlocked(unlockedFlags);
@@ -900,7 +899,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // === 6. AMBIENT AUDIO LOGIC ===
   function playAmbient() {
-    const score = getVisited().length;
+    const score = linkPoints();
     if (score >= 20 && ambientAlt) {
       ambientDefault.pause();
       ambientDefault.muted = true;
@@ -941,7 +940,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var el = document.getElementById('tracker-toggle');
   if (!el) return;
   var saved = localStorage.getItem('tracker-toggle');
-  if (saved !== null) el.checked = saved === 'true';
   el.addEventListener('change', function () { localStorage.setItem('tracker-toggle', el.checked); });
 });
 </script>

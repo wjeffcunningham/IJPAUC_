@@ -100,14 +100,24 @@ persistIds.forEach(id => {
 document.addEventListener('DOMContentLoaded', () => {
   const hero = document.getElementById('hero-media');
   if (!hero || hero.tagName !== 'VIDEO' || !hero.dataset.fallback) return;
-  const playing = hero.play();
-  if (playing) playing.catch(() => {
-    if (!hero.paused) return;
+  let swapped = false;
+  const swap = () => {
+    if (swapped || !hero.paused) return;
+    swapped = true;
     const img = document.createElement('img');
     img.src = hero.dataset.fallback;
     img.alt = hero.dataset.fallbackAlt || '';
     img.id = 'hero-media';
     img.className = 'hero-media';
     hero.replaceWith(img);
-  });
+  };
+  const playing = hero.play();
+  if (playing) playing.catch(swap);
+  // Safari can leave a muted autoplay clip sitting paused without
+  // rejecting play(). Once the clip has data and still isn't playing,
+  // fall back; if no data arrives at all, fall back after 8 seconds.
+  const check = () => setTimeout(swap, 600);
+  if (hero.readyState >= 3) check();
+  else hero.addEventListener('canplay', check, { once: true });
+  setTimeout(() => { if (hero.readyState < 2) swap(); }, 8000);
 });

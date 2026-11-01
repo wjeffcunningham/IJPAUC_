@@ -1189,7 +1189,8 @@ body.dark-mode .datebook-note::before {
   opacity: 1;
 }
 
-.image-grid img {
+.image-grid img,
+.image-grid video.gif-loop {
   width: 100%;
   height: auto;
   display: block;
@@ -1650,6 +1651,13 @@ body:has(#magnify-toggle:checked) main .ch-glow:hover + marginalia[data-type=ch]
 body:has(#magnify-toggle:checked) .magnifier-toggle label {
   color: #4caf50;
   filter: drop-shadow(0 0 2px #4caf50);
+}
+
+.meta-icon {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .menu-header {

@@ -94,3 +94,20 @@ persistIds.forEach(id => {
     });
   });
 });
+
+// Hero clip (as on YIJPAUC): where autoplay is refused (iOS Low Power Mode,
+// data saver), swap in the animated GIF named by data-fallback.
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = document.getElementById('hero-media');
+  if (!hero || hero.tagName !== 'VIDEO' || !hero.dataset.fallback) return;
+  const playing = hero.play();
+  if (playing) playing.catch(() => {
+    if (!hero.paused) return;
+    const img = document.createElement('img');
+    img.src = hero.dataset.fallback;
+    img.alt = hero.dataset.fallbackAlt || '';
+    img.id = 'hero-media';
+    img.className = 'hero-media';
+    hero.replaceWith(img);
+  });
+});

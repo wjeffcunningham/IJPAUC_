@@ -35,7 +35,8 @@
   }
 }
 
-.image-grid img {
+.image-grid img,
+.image-grid video.gif-loop {
   width: 100%;
   height: auto;
   display: block;
